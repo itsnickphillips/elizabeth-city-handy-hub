@@ -14,21 +14,21 @@ import {
 const services = [
   {
     icon: Hammer,
-    title: "General Repairs",
+    title: "General Repairs & Maintenance",
     description: "From fixing squeaky doors to patching holes in walls, we handle all your general home repair needs with precision and care.",
-    features: ["Drywall repair", "Door & window fixes", "Furniture assembly", "Basic carpentry"]
+    features: ["Drywall repair & patching", "Door & window adjustments", "Caulking & weatherstripping", "Basic carpentry & trim work"]
   },
   {
     icon: Paintbrush,
     title: "Painting Services",
     description: "Transform your space with our professional interior and exterior painting services. Quality materials and expert application guaranteed.",
-    features: ["Interior painting", "Exterior painting", "Touch-up work", "Color consultation"]
+    features: ["Interior painting", "Exterior touch-ups", "Cabinet refinishing", "Staining & varnishing"]
   },
   {
     icon: Zap,
     title: "Electrical Work",
     description: "Safe and reliable electrical services from licensed professionals. From outlets to ceiling fans, we've got you covered.",
-    features: ["Outlet installation", "Light fixtures", "Ceiling fans", "Switch replacement"]
+    features: ["Outlet & switch installation", "Light fixture mounting", "Ceiling fan installation", "GFCI outlet upgrades"]
   },
   {
     icon: Droplets,

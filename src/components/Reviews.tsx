@@ -8,16 +8,16 @@ const reviews = [
     location: "Elizabeth City, NC",
     rating: 5,
     date: "2 weeks ago",
-    text: "ElizabethCity Pro did an amazing job fixing our kitchen cabinet doors and installing new shelving. The work was completed quickly and professionally. Highly recommend!",
-    service: "Kitchen Repairs"
+    text: "ElizabethCity Pro did an amazing job fixing our kitchen cabinet doors and installing new shelving. The work was completed quickly and professionally. Would definitely recommend to anyone in the Elizabeth City area!",
+    service: "Kitchen Repairs & Installation"
   },
   {
     name: "Mike Rodriguez",
     location: "Camden, NC", 
     rating: 5,
     date: "1 month ago",
-    text: "I needed several electrical outlets installed in my home office. The technician was punctual, knowledgeable, and cleaned up after the job. Great service!",
-    service: "Electrical Work"
+    text: "I needed several electrical outlets installed in my home office and a ceiling fan mounted. The technician was punctual, knowledgeable, and cleaned up perfectly after the job. Great communication throughout the project!",
+    service: "Electrical Installation"
   },
   {
     name: "Linda Chen",

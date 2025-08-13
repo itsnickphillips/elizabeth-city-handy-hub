@@ -53,12 +53,12 @@ const Hero = () => {
               </div>
             </div>
 
-            {/* Service Area Input */}
+            {/* Service Area Input - ZIP Code Search */}
             <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg">
-              <h3 className="text-lg font-semibold mb-4">Get Your Free Quote Today</h3>
+              <h3 className="text-lg font-semibold mb-4">Find Your Trusted Handyman Now</h3>
               <div className="flex flex-col sm:flex-row gap-3">
                 <Input 
-                  placeholder="Enter your zip code"
+                  placeholder="Enter your ZIP code (27909, 27906, etc.)"
                   className="bg-white text-gray-900 border-0"
                 />
                 <Button variant="cta" size="lg" className="whitespace-nowrap">
@@ -66,7 +66,7 @@ const Hero = () => {
                 </Button>
               </div>
               <p className="text-sm text-white/80 mt-2">
-                Available in Elizabeth City, Camden, Pasquotank County and nearby areas
+                Serving Elizabeth City (27909), Camden (27921), Hertford (27944), and all of Pasquotank County
               </p>
             </div>
           </div>
