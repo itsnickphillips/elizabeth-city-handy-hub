@@ -9,7 +9,7 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center">
             <div className="text-2xl font-bold text-primary">
-              ElizabethCity<span className="text-secondary">Pro</span>
+              ElizabethCity<span className="text-secondary">Property Services</span>
             </div>
           </div>
 
