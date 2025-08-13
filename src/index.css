@@ -10,11 +10,11 @@ All colors MUST be HSL. Color palette: Professional blue, trust orange, clean gr
 
 @layer base {
   :root {
-    /* Brand Colors - Refined Palette (Deep Navy + Rich Bronze/Champagne) */
+    /* Brand Colors - Coastal Nautical Palette (Deep Navy + Warm Tan/Sand) */
     --color-primary: 226 74% 11%;        /* Deep Navy #0A0F2C */
     --color-bg: 48 32% 96%;             /* Bone/Cream #F8F6F1 */
-    --color-accent: 42 42% 49%;         /* Rich Bronze Gold #B08A46 */
-    --color-accent-soft: 41 35% 82%;    /* Soft Champagne #E3D9C3 */
+    --color-accent: 34 44% 69%;         /* Warm Tan #D2B48C */
+    --color-accent-soft: 42 33% 87%;    /* Soft Sand #E9E1D3 */
     --color-ink: 0 0% 10%;              /* Matte Black #1A1A1A */
     
     /* Map to existing semantic tokens */
@@ -22,12 +22,12 @@ All colors MUST be HSL. Color palette: Professional blue, trust orange, clean gr
     --primary-light: 226 74% 15%;       /* Slightly lighter navy */
     --primary-foreground: 48 32% 96%;   /* Cream text on navy */
     
-    --secondary: 42 42% 49%;            /* Rich Bronze Gold */
-    --secondary-light: 42 42% 55%;      /* Lighter Bronze Gold */
-    --secondary-foreground: 48 32% 96%; /* Cream text on bronze */
+    --secondary: 34 44% 69%;            /* Warm Tan */
+    --secondary-light: 34 44% 75%;      /* Lighter Tan */
+    --secondary-foreground: 226 74% 11%; /* Navy text on tan */
     
-    --accent: 41 35% 82%;               /* Soft Champagne */
-    --accent-foreground: 0 0% 10%;      /* Dark text on champagne */
+    --accent: 42 33% 87%;               /* Soft Sand */
+    --accent-foreground: 0 0% 10%;      /* Dark text on sand */
     
     /* Core Colors */
     --background: 48 32% 96%;           /* Cream background */
@@ -62,9 +62,9 @@ All colors MUST be HSL. Color palette: Professional blue, trust orange, clean gr
 
     --radius: 0.5rem;
     
-    /* Business-specific gradients - Smooth navy to bronze */
-    --gradient-hero: linear-gradient(180deg, hsl(226 74% 11%) 0%, hsl(42 42% 49%) 100%);
-    --gradient-cta: linear-gradient(135deg, hsl(42 42% 49%), hsl(42 42% 55%));
+    /* Business-specific gradients - Smooth navy to tan coastal feel */
+    --gradient-hero: linear-gradient(180deg, hsl(226 74% 11%) 0%, hsl(34 44% 69%) 100%);
+    --gradient-cta: linear-gradient(135deg, hsl(34 44% 69%), hsl(34 44% 75%));
     --gradient-section: linear-gradient(180deg, hsl(var(--gray-50)), hsl(var(--background)));
     
     /* Shadows - Updated for new brand */
