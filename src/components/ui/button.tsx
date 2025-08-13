@@ -10,10 +10,10 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default: "bg-primary text-primary-foreground hover:bg-primary/90 shadow-md hover:shadow-lg",
-        primary: "bg-secondary text-secondary-foreground hover:bg-[hsl(34_44%_59%)] hover:text-primary-foreground shadow-md hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-1",
-        cta: "bg-secondary text-secondary-foreground hover:bg-[hsl(34_44%_59%)] hover:text-primary-foreground shadow-md hover:shadow-lg transform hover:scale-105 font-semibold focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-1",
+        primary: "bg-primary text-secondary hover:bg-secondary hover:text-primary shadow-md hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-1",
+        cta: "bg-primary text-secondary hover:bg-secondary hover:text-primary shadow-md hover:shadow-lg transform hover:scale-105 font-semibold focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-1",
         destructive: "bg-destructive text-destructive-foreground hover:bg-destructive/90",
-        outline: "border-2 border-secondary text-secondary bg-transparent hover:bg-secondary hover:text-secondary-foreground focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-1",
+        outline: "border-2 border-primary text-primary bg-primary-foreground hover:bg-primary hover:text-primary-foreground focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-1",
         secondary: "bg-accent text-accent-foreground hover:bg-accent/90 border border-primary/20",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline hover:text-secondary",

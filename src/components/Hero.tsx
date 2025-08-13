@@ -23,41 +23,41 @@ const Hero = () => {
                 <span className="text-accent block">Handyman Services</span>
                 in Your Neighborhood
               </h1>
-              <p className="text-xl mb-8 text-white/90">
+              <p className="text-xl mb-8 text-accent-soft font-medium leading-relaxed">
                 Repairs, Installations, and Maintenance done right—the first time.
                 Professional, licensed, and trusted by Elizabeth City homeowners.
               </p>
             </div>
 
             {/* Trust Indicators */}
-            <div className="flex flex-wrap items-center gap-6 mb-8">
+            <div className="flex items-center justify-between mb-8 max-w-lg">
               <div className="flex items-center space-x-2">
-                <CheckCircle className="text-accent" size={20} />
-                <span>Licensed & Insured</span>
+                <CheckCircle className="text-accent" size={16} />
+                <span className="text-sm">Licensed & Insured</span>
               </div>
               <div className="flex items-center space-x-2">
-                <CheckCircle className="text-accent" size={20} />
-                <span>Same Day Service</span>
+                <CheckCircle className="text-accent" size={16} />
+                <span className="text-sm">Same Day Service</span>
               </div>
               <div className="flex items-center space-x-2">
-                <CheckCircle className="text-accent" size={20} />
-                <span>Free Estimates</span>
+                <CheckCircle className="text-accent" size={16} />
+                <span className="text-sm">Free Estimates</span>
               </div>
             </div>
 
             {/* Service Area Input - ZIP Code Search */}
-            <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl border border-white/20">
-              <h3 className="text-lg font-semibold mb-4 text-primary-foreground">Find Your Trusted Handyman Now</h3>
+            <div className="bg-primary-foreground p-5 rounded-xl border border-primary/20 shadow-lg">
+              <h3 className="text-lg font-semibold mb-4 text-foreground">Find Your Trusted Handyman Now</h3>
               <div className="flex flex-col sm:flex-row gap-3">
                 <Input 
                   placeholder="Enter your ZIP code (27909, 27906, etc.)"
-                  className="bg-white text-foreground border-0 focus:ring-2 focus:ring-accent"
+                  className="bg-white text-foreground border border-gray-200 focus:ring-2 focus:ring-accent"
                 />
                 <Button variant="primary" size="lg" className="whitespace-nowrap">
                   Find My Handyman
                 </Button>
               </div>
-              <p className="text-sm text-accent mt-2">
+              <p className="text-sm text-muted-foreground mt-2">
                 Serving Elizabeth City (27909), Camden (27921), Hertford (27944), and all of Pasquotank County
               </p>
             </div>
