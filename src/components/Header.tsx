@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-import { Phone, Mail } from "lucide-react";
 
 const Header = () => {
   return (
@@ -31,16 +30,6 @@ const Header = () => {
 
           {/* Contact Info & CTA */}
           <div className="flex items-center space-x-4">
-            <div className="hidden lg:flex items-center space-x-4 text-sm">
-              <div className="flex items-center space-x-1 text-muted-foreground">
-                <Phone size={16} />
-                <span>(919) 457-7325</span>
-              </div>
-              <div className="flex items-center space-x-1 text-muted-foreground">
-                <Mail size={16} />
-                <span>office@elizabethcitypropertyservices.com</span>
-              </div>
-            </div>
             <Button variant="primary" size="sm">
               Get Free Quote
             </Button>
