@@ -118,7 +118,7 @@ const ServiceArea = () => {
                 Find My Handyman
               </Button>
               <Button variant="outline" size="lg">
-                Call (252) 555-0123
+                Call (919) 457-7325
               </Button>
             </div>
           </div>

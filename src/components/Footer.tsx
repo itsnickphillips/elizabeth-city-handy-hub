@@ -82,7 +82,7 @@ const Footer = () => {
               <div className="flex items-center space-x-3">
                 <Phone size={18} />
                 <div>
-                  <p className="font-semibold text-white">(252) 555-0123</p>
+                  <p className="font-semibold text-white">(919) 457-7325</p>
                   <p className="text-sm">Available 7 days a week</p>
                 </div>
               </div>
@@ -90,7 +90,7 @@ const Footer = () => {
               <div className="flex items-center space-x-3">
                 <Mail size={18} />
                 <div>
-                  <p>info@elizabethcitypro.com</p>
+                  <p>office@elizabethcitypropertyservices.com</p>
                   <p className="text-sm">2-hour response time</p>
                 </div>
               </div>

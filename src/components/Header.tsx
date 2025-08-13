@@ -34,11 +34,11 @@ const Header = () => {
             <div className="hidden lg:flex items-center space-x-4 text-sm">
               <div className="flex items-center space-x-1 text-gray-600">
                 <Phone size={16} />
-                <span>(252) 555-0123</span>
+                <span>(919) 457-7325</span>
               </div>
               <div className="flex items-center space-x-1 text-gray-600">
                 <Mail size={16} />
-                <span>info@elizabethcitypro.com</span>
+                <span>office@elizabethcitypropertyservices.com</span>
               </div>
             </div>
             <Button variant="cta" size="sm">

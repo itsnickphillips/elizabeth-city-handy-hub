@@ -56,7 +56,7 @@ const Contact = () => {
                   <label className="block text-sm font-medium text-gray-700 mb-2">
                     Phone Number *
                   </label>
-                  <Input placeholder="(252) 555-0123" />
+                  <Input placeholder="(919) 457-7325" />
                 </div>
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">
@@ -117,7 +117,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <p className="font-semibold text-gray-900">Call Us Now</p>
-                      <p className="text-xl text-primary font-bold">(252) 555-0123</p>
+                      <p className="text-xl text-primary font-bold">(919) 457-7325</p>
                       <p className="text-sm text-gray-600">Available 7 days a week</p>
                     </div>
                   </div>
@@ -128,7 +128,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <p className="font-semibold text-gray-900">Email Us</p>
-                      <p className="text-primary">info@elizabethcitypro.com</p>
+                      <p className="text-primary">office@elizabethcitypropertyservices.com</p>
                       <p className="text-sm text-gray-600">We respond within 2 hours</p>
                     </div>
                   </div>
@@ -168,7 +168,7 @@ const Contact = () => {
                   for urgent repairs that can't wait.
                 </p>
                 <Button variant="secondary" size="lg" className="w-full">
-                  Call Emergency Line: (252) 555-0911
+                  Call Emergency Line: (919) 457-7325
                 </Button>
               </CardContent>
             </Card>
