@@ -10,11 +10,11 @@ All colors MUST be HSL. Color palette: Professional blue, trust orange, clean gr
 
 @layer base {
   :root {
-    /* Brand Colors - New Palette (Deep Navy + Warm Cream/Bronze) */
+    /* Brand Colors - Refined Palette (Deep Navy + Rich Bronze/Champagne) */
     --color-primary: 226 74% 11%;        /* Deep Navy #0A0F2C */
     --color-bg: 48 32% 96%;             /* Bone/Cream #F8F6F1 */
-    --color-accent: 42 50% 34%;         /* Bronze #7C6631 */
-    --color-accent-soft: 41 30% 74%;    /* Champagne #CFC4AE */
+    --color-accent: 42 42% 49%;         /* Rich Bronze Gold #B08A46 */
+    --color-accent-soft: 41 35% 82%;    /* Soft Champagne #E3D9C3 */
     --color-ink: 0 0% 10%;              /* Matte Black #1A1A1A */
     
     /* Map to existing semantic tokens */
@@ -22,11 +22,11 @@ All colors MUST be HSL. Color palette: Professional blue, trust orange, clean gr
     --primary-light: 226 74% 15%;       /* Slightly lighter navy */
     --primary-foreground: 48 32% 96%;   /* Cream text on navy */
     
-    --secondary: 42 50% 34%;            /* Bronze */
-    --secondary-light: 42 50% 40%;      /* Lighter Bronze */
+    --secondary: 42 42% 49%;            /* Rich Bronze Gold */
+    --secondary-light: 42 42% 55%;      /* Lighter Bronze Gold */
     --secondary-foreground: 48 32% 96%; /* Cream text on bronze */
     
-    --accent: 41 30% 74%;               /* Champagne */
+    --accent: 41 35% 82%;               /* Soft Champagne */
     --accent-foreground: 0 0% 10%;      /* Dark text on champagne */
     
     /* Core Colors */
@@ -62,9 +62,9 @@ All colors MUST be HSL. Color palette: Professional blue, trust orange, clean gr
 
     --radius: 0.5rem;
     
-    /* Business-specific gradients */
-    --gradient-hero: linear-gradient(180deg, hsl(var(--primary)), hsl(var(--secondary)));
-    --gradient-cta: linear-gradient(135deg, hsl(var(--secondary)), hsl(var(--secondary-light)));
+    /* Business-specific gradients - Smooth navy to bronze */
+    --gradient-hero: linear-gradient(180deg, hsl(226 74% 11%) 0%, hsl(42 42% 49%) 100%);
+    --gradient-cta: linear-gradient(135deg, hsl(42 42% 49%), hsl(42 42% 55%));
     --gradient-section: linear-gradient(180deg, hsl(var(--gray-50)), hsl(var(--background)));
     
     /* Shadows - Updated for new brand */
