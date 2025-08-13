@@ -128,7 +128,7 @@ All colors MUST be HSL. Color palette: Professional blue, trust orange, clean gr
   }
 
   body {
-    @apply bg-background text-foreground font-inter antialiased;
+    @apply bg-background text-foreground font-sans antialiased;
   }
   
   /* Custom Utility Classes */
