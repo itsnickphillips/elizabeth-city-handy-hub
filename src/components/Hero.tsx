@@ -1,20 +1,12 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { MapPin, Clock, CheckCircle, Phone } from "lucide-react";
-import heroImage from "@/assets/hero-handyman.jpg";
 
 const Hero = () => {
   return (
     <section className="relative min-h-[80vh] flex items-center overflow-hidden">
-      {/* Background Image */}
-      <div className="absolute inset-0 z-0">
-        <img 
-          src={heroImage} 
-          alt="Professional handyman working on home repairs in Elizabeth City, NC"
-          className="w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-primary/20"></div>
-      </div>
+      {/* Background Gradient */}
+      <div className="absolute inset-0 z-0 bg-gradient-to-br from-primary via-primary-light to-secondary"></div>
 
       {/* Content */}
       <div className="container mx-auto px-4 relative z-10">
@@ -61,7 +53,7 @@ const Hero = () => {
                   placeholder="Enter your ZIP code (27909, 27906, etc.)"
                   className="bg-white text-gray-900 border-0"
                 />
-                <Button variant="cta" size="lg" className="whitespace-nowrap">
+                <Button variant="secondary" size="lg" className="whitespace-nowrap">
                   Find My Handyman
                 </Button>
               </div>
