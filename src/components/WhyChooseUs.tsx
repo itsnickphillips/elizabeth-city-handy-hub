@@ -52,14 +52,14 @@ const stats = [
 
 const WhyChooseUs = () => {
   return (
-    <section id="about" className="py-20 bg-white">
+    <section id="about" className="py-20 bg-muted">
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+          <h2 className="text-4xl lg:text-5xl font-bold text-primary mb-6">
             Why Choose ElizabethCity Pro?
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-foreground max-w-3xl mx-auto">
             When you need reliable handyman services in Elizabeth City, NC, choose the team that puts 
             quality, integrity, and customer satisfaction first.
           </p>
@@ -72,7 +72,7 @@ const WhyChooseUs = () => {
               <div className="text-4xl lg:text-5xl font-bold text-primary mb-2">
                 {stat.number}
               </div>
-              <div className="text-gray-600 font-medium">
+              <div className="text-foreground font-medium">
                 {stat.label}
               </div>
             </div>
@@ -84,15 +84,15 @@ const WhyChooseUs = () => {
           {features.map((feature, index) => {
             const IconComponent = feature.icon;
             return (
-              <Card key={index} className="border-0 shadow-md hover:shadow-lg transition-all duration-300">
+              <Card key={index} className="border border-border shadow-sm hover:shadow-md transition-all duration-300">
                 <CardContent className="p-8 text-center">
-                  <div className="mx-auto mb-6 p-4 bg-primary/10 rounded-full w-16 h-16 flex items-center justify-center">
+                  <div className="mx-auto mb-6 p-4 rounded-full w-16 h-16 flex items-center justify-center">
                     <IconComponent className="text-primary" size={32} />
                   </div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-4">
+                  <h3 className="text-xl font-bold text-primary mb-4">
                     {feature.title}
                   </h3>
-                  <p className="text-gray-600">
+                  <p className="text-foreground">
                     {feature.description}
                   </p>
                 </CardContent>
@@ -111,27 +111,27 @@ const WhyChooseUs = () => {
               <div>
                 <div className="flex justify-center mb-4">
                   {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="text-secondary fill-current" size={24} />
+                    <Star key={i} className="text-white fill-current" size={24} />
                   ))}
                 </div>
                 <p className="text-lg">5-Star Customer Reviews</p>
               </div>
               <div className="space-y-4">
                 <div className="flex items-center justify-center space-x-2">
-                  <CheckCircle className="text-accent" size={20} />
+                  <CheckCircle className="text-white" size={20} />
                   <span>BBB Accredited Business</span>
                 </div>
                 <div className="flex items-center justify-center space-x-2">
-                  <CheckCircle className="text-accent" size={20} />
+                  <CheckCircle className="text-white" size={20} />
                   <span>Fully Licensed & Bonded</span>
                 </div>
                 <div className="flex items-center justify-center space-x-2">
-                  <CheckCircle className="text-accent" size={20} />
+                  <CheckCircle className="text-white" size={20} />
                   <span>Comprehensive Insurance</span>
                 </div>
               </div>
               <div>
-                <div className="text-4xl font-bold text-secondary mb-2">
+                <div className="text-4xl font-bold text-white mb-2">
                   10+
                 </div>
                 <p className="text-lg">Years Serving Our Community</p>

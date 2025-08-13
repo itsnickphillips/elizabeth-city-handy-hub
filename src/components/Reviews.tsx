@@ -39,14 +39,14 @@ const reviews = [
 
 const Reviews = () => {
   return (
-    <section id="reviews" className="py-20 gradient-section">
+    <section id="reviews" className="py-20 bg-muted">
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+          <h2 className="text-4xl lg:text-5xl font-bold text-primary mb-6">
             What Our Customers Say
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-foreground max-w-3xl mx-auto">
             Don't just take our word for it. See why Elizabeth City homeowners trust us 
             with their most important projects.
           </p>
@@ -55,32 +55,32 @@ const Reviews = () => {
         {/* Reviews Grid */}
         <div className="grid md:grid-cols-2 gap-8 mb-12">
           {reviews.map((review, index) => (
-            <Card key={index} className="border-0 shadow-md hover:shadow-lg transition-all duration-300">
+            <Card key={index} className="border border-border shadow-sm hover:shadow-md transition-all duration-300">
               <CardContent className="p-8">
                 {/* Header */}
                 <div className="flex items-start justify-between mb-6">
                   <div>
-                    <h4 className="font-bold text-gray-900 text-lg">{review.name}</h4>
-                    <p className="text-gray-600 text-sm">{review.location}</p>
-                    <p className="text-gray-500 text-xs">{review.date}</p>
+                    <h4 className="font-bold text-primary text-lg">{review.name}</h4>
+                    <p className="text-foreground text-sm">{review.location}</p>
+                    <p className="text-muted-foreground text-xs">{review.date}</p>
                   </div>
                   <div className="flex items-center space-x-1">
                     {[...Array(review.rating)].map((_, i) => (
-                      <Star key={i} className="text-secondary fill-current" size={20} />
+                      <Star key={i} className="text-primary fill-current" size={20} />
                     ))}
                   </div>
                 </div>
 
                 {/* Quote */}
                 <div className="relative">
-                  <Quote className="absolute -top-2 -left-2 text-gray-200" size={32} />
-                  <p className="text-gray-700 italic pl-6 mb-4">
+                  <Quote className="absolute -top-2 -left-2 text-border" size={32} />
+                  <p className="text-foreground italic pl-6 mb-4">
                     "{review.text}"
                   </p>
                 </div>
 
                 {/* Service Type */}
-                <div className="inline-block bg-primary/10 text-primary px-3 py-1 rounded-full text-sm font-medium">
+                <div className="inline-block bg-white text-primary px-3 py-1 rounded-full text-sm font-medium border border-primary">
                   {review.service}
                 </div>
               </CardContent>
@@ -90,18 +90,18 @@ const Reviews = () => {
 
         {/* Google Reviews Section */}
         <div className="text-center">
-          <div className="bg-white rounded-lg shadow-custom p-8 max-w-2xl mx-auto">
+          <div className="bg-white rounded-lg shadow-custom p-8 max-w-2xl mx-auto border border-primary">
             <div className="mb-6">
               <div className="flex justify-center items-center space-x-2 mb-4">
                 <div className="flex">
                   {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="text-secondary fill-current" size={24} />
+                    <Star key={i} className="text-primary fill-current" size={24} />
                   ))}
                 </div>
-                <span className="text-2xl font-bold text-gray-900">4.9/5</span>
+                <span className="text-2xl font-bold text-primary">4.9/5</span>
               </div>
-              <p className="text-gray-600 mb-2">Based on 127+ Google Reviews</p>
-              <p className="text-sm text-gray-500">
+              <p className="text-foreground mb-2">Based on 127+ Google Reviews</p>
+              <p className="text-sm text-muted-foreground">
                 See all our reviews and leave your own feedback
               </p>
             </div>

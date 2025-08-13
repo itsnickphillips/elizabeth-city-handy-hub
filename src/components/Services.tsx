@@ -52,14 +52,14 @@ const services = [
 
 const Services = () => {
   return (
-    <section id="services" className="py-20 gradient-section">
+    <section id="services" className="py-20 bg-white section-separator">
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+          <h2 className="text-4xl lg:text-5xl font-bold text-primary mb-6">
             Professional Handyman Services
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-foreground max-w-3xl mx-auto">
             From minor repairs to major installations, our experienced team delivers quality workmanship 
             you can trust. Serving Elizabeth City, NC and surrounding areas with pride.
           </p>
@@ -70,28 +70,28 @@ const Services = () => {
           {services.map((service, index) => {
             const IconComponent = service.icon;
             return (
-              <Card key={index} className="group hover:shadow-xl transition-all duration-300 border-0 shadow-md">
+              <Card key={index} className="group hover:shadow-lg transition-all duration-300 border border-primary shadow-sm">
                 <CardHeader className="text-center pb-4">
-                  <div className="mx-auto mb-4 p-4 bg-primary/10 rounded-full w-16 h-16 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-all duration-300">
-                    <IconComponent size={32} />
+                  <div className="mx-auto mb-4 p-4 rounded-full w-16 h-16 flex items-center justify-center">
+                    <IconComponent className="text-primary" size={32} />
                   </div>
-                  <CardTitle className="text-xl font-bold text-gray-900">
+                  <CardTitle className="text-xl font-bold text-primary">
                     {service.title}
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="text-center">
-                  <p className="text-gray-600 mb-6">
+                  <p className="text-foreground mb-6">
                     {service.description}
                   </p>
                   <ul className="space-y-2 mb-6">
                     {service.features.map((feature, idx) => (
-                      <li key={idx} className="flex items-center justify-center space-x-2 text-sm text-gray-600">
-                        <CheckCircle className="text-accent" size={16} />
+                      <li key={idx} className="flex items-center justify-center space-x-2 text-sm text-foreground">
+                        <CheckCircle className="text-primary" size={16} />
                         <span>{feature}</span>
                       </li>
                     ))}
                   </ul>
-                  <Button variant="outline" className="group-hover:bg-primary group-hover:text-white">
+                  <Button variant="outline">
                     Learn More
                     <ArrowRight className="ml-2" size={16} />
                   </Button>
@@ -103,11 +103,11 @@ const Services = () => {
 
         {/* Call to Action */}
         <div className="text-center">
-          <div className="bg-white rounded-lg shadow-custom p-8 max-w-2xl mx-auto">
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">
+          <div className="bg-white rounded-lg shadow-custom p-8 max-w-2xl mx-auto border border-primary">
+            <h3 className="text-2xl font-bold text-primary mb-4">
               Need Something Not Listed?
             </h3>
-            <p className="text-gray-600 mb-6">
+            <p className="text-foreground mb-6">
               We handle a wide variety of home improvement projects. Contact us to discuss your specific needs 
               and get a free, no-obligation estimate.
             </p>

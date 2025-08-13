@@ -9,14 +9,14 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-primary text-primary-foreground hover:bg-primary/90 shadow-md hover:shadow-lg",
-        primary: "bg-primary text-secondary hover:bg-secondary hover:text-primary shadow-md hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-1",
-        cta: "bg-primary text-secondary hover:bg-secondary hover:text-primary shadow-md hover:shadow-lg transform hover:scale-105 font-semibold focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-1",
+        default: "bg-primary text-primary-foreground hover:bg-primary/90 shadow-sm hover:shadow-md transition-all duration-200",
+        primary: "bg-primary text-primary-foreground hover:bg-primary/90 shadow-sm hover:shadow-md transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2",
+        cta: "bg-primary text-primary-foreground hover:bg-primary/90 shadow-sm hover:shadow-md transition-all duration-200 font-semibold focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2",
         destructive: "bg-destructive text-destructive-foreground hover:bg-destructive/90",
-        outline: "border-2 border-primary text-primary bg-primary-foreground hover:bg-primary hover:text-primary-foreground focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-1",
-        secondary: "bg-accent text-accent-foreground hover:bg-accent/90 border border-primary/20",
-        ghost: "hover:bg-accent hover:text-accent-foreground",
-        link: "text-primary underline-offset-4 hover:underline hover:text-secondary",
+        outline: "border border-primary text-primary bg-white hover:bg-primary hover:text-white transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2",
+        secondary: "bg-muted text-foreground hover:bg-muted/80 border border-border transition-all duration-200",
+        ghost: "hover:bg-muted hover:text-foreground transition-all duration-200",
+        link: "text-primary underline-offset-4 hover:underline transition-all duration-200",
       },
       size: {
         default: "h-10 px-4 py-2",

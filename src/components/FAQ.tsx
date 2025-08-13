@@ -43,10 +43,10 @@ const FAQ = () => {
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+          <h2 className="text-4xl lg:text-5xl font-bold text-primary mb-6">
             Frequently Asked Questions
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-foreground max-w-3xl mx-auto">
             Got questions about our handyman services in Elizabeth City? 
             Here are answers to the most common questions from our customers.
           </p>
@@ -55,14 +55,14 @@ const FAQ = () => {
         <div className="max-w-4xl mx-auto">
           <Accordion type="single" collapsible className="space-y-4">
             {faqs.map((faq, index) => (
-              <AccordionItem key={index} value={`item-${index}`} className="border border-gray-200 rounded-lg px-6">
-                <AccordionTrigger className="text-left font-semibold text-gray-900 hover:text-primary">
+              <AccordionItem key={index} value={`item-${index}`} className="border border-border rounded-lg px-6">
+                <AccordionTrigger className="text-left font-semibold text-primary hover:text-primary/80">
                   <div className="flex items-center space-x-3">
                     <HelpCircle className="text-primary flex-shrink-0" size={20} />
                     <span>{faq.question}</span>
                   </div>
                 </AccordionTrigger>
-                <AccordionContent className="text-gray-600 pl-8 pb-4">
+                <AccordionContent className="text-foreground pl-8 pb-4">
                   {faq.answer}
                 </AccordionContent>
               </AccordionItem>

@@ -2,76 +2,62 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Professional Handyman Business Design System
-All colors MUST be HSL. Color palette: Professional blue, trust orange, clean grays
+/* Minimal Modern Handyman Design System
+Clean white background with navy accents
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 
 @layer base {
   :root {
-    /* Brand Colors - Coastal Nautical Palette (Deep Navy + Warm Tan/Sand) */
-    --color-primary: 226 74% 11%;        /* Deep Navy #0A0F2C */
-    --color-bg: 48 32% 96%;             /* Bone/Cream #F8F6F1 */
-    --color-accent: 34 44% 69%;         /* Warm Tan #D2B48C */
-    --color-accent-soft: 42 33% 87%;    /* Soft Sand #E9E1D3 */
-    --color-ink: 0 0% 10%;              /* Matte Black #1A1A1A */
+    /* Minimal Color Palette - White + Navy Accents */
+    --primary: 226 74% 11%;             /* Deep Navy #0A0F2C */
+    --primary-foreground: 0 0% 100%;    /* White text on navy */
     
-    /* Map to existing semantic tokens */
-    --primary: 226 74% 11%;             /* Deep Navy */
-    --primary-light: 226 74% 15%;       /* Slightly lighter navy */
-    --primary-foreground: 48 32% 96%;   /* Cream text on navy */
+    --secondary: 0 0% 96%;              /* Light gray #F5F5F5 */
+    --secondary-foreground: 226 74% 11%; /* Navy text on light gray */
     
-    --secondary: 34 44% 69%;            /* Warm Tan */
-    --secondary-light: 34 44% 75%;      /* Lighter Tan */
-    --secondary-foreground: 226 74% 11%; /* Navy text on tan */
+    --accent: 226 74% 11%;              /* Navy for accents */
+    --accent-foreground: 0 0% 100%;     /* White text on navy */
     
-    --accent: 42 33% 87%;               /* Soft Sand */
-    --accent-foreground: 0 0% 10%;      /* Dark text on sand */
-    
-    /* Core Colors */
-    --background: 48 32% 96%;           /* Cream background */
-    --foreground: 0 0% 10%;             /* Dark text */
+    /* Core Colors - Clean White Base */
+    --background: 0 0% 100%;            /* Pure white */
+    --foreground: 0 0% 20%;             /* Dark gray #333333 */
 
     /* Surface Colors */
-    --card: 0 0% 100%;
-    --card-foreground: 222 84% 5%;
+    --card: 0 0% 100%;                  /* White cards */
+    --card-foreground: 0 0% 20%;        /* Dark gray text */
     
     --popover: 0 0% 100%;
-    --popover-foreground: 222 84% 5%;
+    --popover-foreground: 0 0% 20%;
     
-    --muted: 220 13% 97%;
-    --muted-foreground: 220 9% 46%;
+    --muted: 0 0% 96%;                  /* #F5F5F5 for subtle backgrounds */
+    --muted-foreground: 0 0% 45%;       /* Medium gray text */
     
-    /* Neutral Grays */
-    --gray-50: 220 13% 97%;
-    --gray-100: 220 13% 91%;
-    --gray-200: 220 13% 83%;
-    --gray-300: 220 9% 65%;
-    --gray-400: 220 9% 46%;
-    --gray-500: 220 9% 26%;
-    --gray-600: 220 14% 11%;
-    --gray-900: 222 84% 5%;
+    /* Minimal Grays */
+    --gray-50: 0 0% 98%;
+    --gray-100: 0 0% 96%;               /* #F5F5F5 */
+    --gray-200: 0 0% 90%;               /* #E5E5E5 for borders */
+    --gray-300: 0 0% 83%;
+    --gray-400: 0 0% 64%;
+    --gray-500: 0 0% 45%;
+    --gray-600: 0 0% 32%;
+    --gray-900: 0 0% 20%;               /* #333333 for body text */
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 220 13% 91%;
-    --input: 220 13% 91%;
-    --ring: 214 100% 40%;
+    --border: 0 0% 90%;                 /* #E5E5E5 for subtle borders */
+    --input: 0 0% 90%;
+    --ring: 226 74% 11%;                /* Navy focus rings */
 
     --radius: 0.5rem;
     
-    /* Business-specific gradients - Smooth navy to tan coastal feel */
-    --gradient-hero: linear-gradient(180deg, hsl(226 74% 11%) 0%, hsl(226 74% 11%) 60%, hsl(34 44% 69%) 100%);
-    --gradient-cta: linear-gradient(135deg, hsl(34 44% 69%), hsl(34 44% 75%));
-    --gradient-section: linear-gradient(180deg, hsl(var(--gray-50)), hsl(var(--background)));
-    
-    /* Shadows - Updated for new brand */
-    --shadow-sm: 0 1px 2px 0 hsl(var(--primary) / 0.05);
-    --shadow-md: 0 4px 6px -1px hsl(var(--primary) / 0.08);
-    --shadow-lg: 0 8px 24px hsl(var(--primary) / 0.08);
-    --shadow-xl: 0 20px 25px -5px hsl(var(--primary) / 0.1);
+    /* Minimal shadows */
+    --shadow-sm: 0 1px 2px 0 hsl(0 0% 0% / 0.05);
+    --shadow-md: 0 4px 6px -1px hsl(0 0% 0% / 0.1);
+    --shadow-lg: 0 10px 15px -3px hsl(0 0% 0% / 0.1);
+    --shadow-xl: 0 20px 25px -5px hsl(0 0% 0% / 0.1);
 
     --sidebar-background: 0 0% 98%;
 
@@ -139,16 +125,8 @@ All colors MUST be HSL. Color palette: Professional blue, trust orange, clean gr
   }
   
   /* Custom Utility Classes */
-  .gradient-hero {
-    background: var(--gradient-hero);
-  }
-  
-  .gradient-cta {
-    background: var(--gradient-cta);
-  }
-  
-  .gradient-section {
-    background: var(--gradient-section);
+  .section-separator {
+    border-top: 1px solid hsl(var(--border));
   }
   
   .shadow-custom {
