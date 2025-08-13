@@ -18,7 +18,7 @@ const Footer = () => {
           {/* Company Info */}
           <div>
             <div className="text-2xl font-bold mb-4">
-              ElizabethCity<span className="text-secondary">Pro</span>
+              ElizabethCity<span className="text-secondary">Property Services</span>
             </div>
             <p className="text-gray-300 mb-6">
               Your trusted local handyman service in Elizabeth City, NC. 
