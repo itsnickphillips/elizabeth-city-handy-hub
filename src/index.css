@@ -10,21 +10,28 @@ All colors MUST be HSL. Color palette: Professional blue, trust orange, clean gr
 
 @layer base {
   :root {
-    /* Brand Colors - Professional Handyman Theme */
-    --primary: 214 100% 40%;          /* Professional Blue */
-    --primary-light: 214 100% 50%;    /* Lighter Blue */
-    --primary-foreground: 0 0% 100%;   /* White */
+    /* Brand Colors - New Palette (Deep Navy + Warm Cream/Bronze) */
+    --color-primary: 226 74% 11%;        /* Deep Navy #0A0F2C */
+    --color-bg: 48 32% 96%;             /* Bone/Cream #F8F6F1 */
+    --color-accent: 42 50% 34%;         /* Bronze #7C6631 */
+    --color-accent-soft: 41 30% 74%;    /* Champagne #CFC4AE */
+    --color-ink: 0 0% 10%;              /* Matte Black #1A1A1A */
     
-    --secondary: 25 95% 53%;          /* Trust Orange */
-    --secondary-light: 25 100% 60%;   /* Lighter Orange */
-    --secondary-foreground: 0 0% 100%; /* White */
+    /* Map to existing semantic tokens */
+    --primary: 226 74% 11%;             /* Deep Navy */
+    --primary-light: 226 74% 15%;       /* Slightly lighter navy */
+    --primary-foreground: 48 32% 96%;   /* Cream text on navy */
     
-    --accent: 147 50% 47%;            /* Success Green */
-    --accent-foreground: 0 0% 100%;   /* White */
+    --secondary: 42 50% 34%;            /* Bronze */
+    --secondary-light: 42 50% 40%;      /* Lighter Bronze */
+    --secondary-foreground: 48 32% 96%; /* Cream text on bronze */
+    
+    --accent: 41 30% 74%;               /* Champagne */
+    --accent-foreground: 0 0% 10%;      /* Dark text on champagne */
     
     /* Core Colors */
-    --background: 0 0% 100%;
-    --foreground: 222 84% 5%;
+    --background: 48 32% 96%;           /* Cream background */
+    --foreground: 0 0% 10%;             /* Dark text */
 
     /* Surface Colors */
     --card: 0 0% 100%;
@@ -56,15 +63,15 @@ All colors MUST be HSL. Color palette: Professional blue, trust orange, clean gr
     --radius: 0.5rem;
     
     /* Business-specific gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-light)));
+    --gradient-hero: linear-gradient(180deg, hsl(var(--primary)), hsl(var(--secondary)));
     --gradient-cta: linear-gradient(135deg, hsl(var(--secondary)), hsl(var(--secondary-light)));
     --gradient-section: linear-gradient(180deg, hsl(var(--gray-50)), hsl(var(--background)));
     
-    /* Shadows */
-    --shadow-sm: 0 1px 2px 0 hsl(var(--gray-900) / 0.05);
-    --shadow-md: 0 4px 6px -1px hsl(var(--gray-900) / 0.1);
-    --shadow-lg: 0 10px 15px -3px hsl(var(--gray-900) / 0.1);
-    --shadow-xl: 0 20px 25px -5px hsl(var(--gray-900) / 0.1);
+    /* Shadows - Updated for new brand */
+    --shadow-sm: 0 1px 2px 0 hsl(var(--primary) / 0.05);
+    --shadow-md: 0 4px 6px -1px hsl(var(--primary) / 0.08);
+    --shadow-lg: 0 8px 24px hsl(var(--primary) / 0.08);
+    --shadow-xl: 0 20px 25px -5px hsl(var(--primary) / 0.1);
 
     --sidebar-background: 0 0% 98%;
 

@@ -11,16 +11,16 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white">
+    <footer className="bg-primary text-primary-foreground">
       {/* Main Footer */}
       <div className="container mx-auto px-4 py-16">
         <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-8">
           {/* Company Info */}
           <div>
             <div className="text-2xl font-bold mb-4">
-              ElizabethCity<span className="text-secondary">Property Services</span>
+              ElizabethCity<span className="text-accent">Property Services</span>
             </div>
-            <p className="text-gray-300 mb-6">
+            <p className="text-accent mb-6">
               Your trusted local handyman service in Elizabeth City, NC. 
               Professional repairs, installations, and maintenance for your home.
             </p>
@@ -29,10 +29,10 @@ const Footer = () => {
             <div className="flex items-center space-x-2 mb-4">
               <div className="flex">
                 {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="text-secondary fill-current" size={16} />
+                  <Star key={i} className="text-accent fill-current" size={16} />
                 ))}
               </div>
-              <span className="text-sm text-gray-300">4.9/5 from 127+ reviews</span>
+              <span className="text-sm text-accent">4.9/5 from 127+ reviews</span>
             </div>
 
             {/* Social Links */}
@@ -52,7 +52,7 @@ const Footer = () => {
           {/* Services */}
           <div>
             <h3 className="text-lg font-semibold mb-6">Our Services</h3>
-            <ul className="space-y-3 text-gray-300">
+            <ul className="space-y-3 text-accent">
               <li><a href="#" className="hover:text-white transition-colors">General Repairs</a></li>
               <li><a href="#" className="hover:text-white transition-colors">Painting Services</a></li>
               <li><a href="#" className="hover:text-white transition-colors">Electrical Work</a></li>
@@ -65,7 +65,7 @@ const Footer = () => {
           {/* Quick Links */}
           <div>
             <h3 className="text-lg font-semibold mb-6">Quick Links</h3>
-            <ul className="space-y-3 text-gray-300">
+            <ul className="space-y-3 text-accent">
               <li><a href="#services" className="hover:text-white transition-colors">Services</a></li>
               <li><a href="#about" className="hover:text-white transition-colors">About Us</a></li>
               <li><a href="#reviews" className="hover:text-white transition-colors">Customer Reviews</a></li>
@@ -78,7 +78,7 @@ const Footer = () => {
           {/* Contact Info */}
           <div>
             <h3 className="text-lg font-semibold mb-6">Contact Information</h3>
-            <div className="space-y-4 text-gray-300">
+            <div className="space-y-4 text-accent">
               <div className="flex items-center space-x-3">
                 <Phone size={18} />
                 <div>
