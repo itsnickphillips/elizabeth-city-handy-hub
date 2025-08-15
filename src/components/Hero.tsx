@@ -55,13 +55,10 @@ const Hero = () => {
                 </p>
               </div>
 
-              <div className="space-y-4 mb-6">
+              <div className="mb-6">
                 <Button variant="primary" size="lg" className="w-full">
                   <Phone className="mr-2" size={20} />
                   Call (919) 457-7325
-                </Button>
-                <Button variant="outline" size="lg" className="w-full">
-                  Schedule Online
                 </Button>
               </div>
 
