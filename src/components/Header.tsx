@@ -3,10 +3,10 @@ import { Button } from "@/components/ui/button";
 const Header = () => {
   return (
     <header className="bg-white border-b border-border sticky top-0 z-50">
-      <div className="container mx-auto px-4 py-6">
+      <div className="container mx-auto px-4 py-8">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center">
+          <div className="flex items-center ml-2">
           <img 
             src="https://yylgysaoxzwgzwudphcc.supabase.co/storage/v1/object/public/assets/HPS_Logo_TransparentBG_Bigger.png"
             alt="Horizon Property Services Logo"
