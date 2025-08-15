@@ -31,7 +31,7 @@ const ServiceArea = () => {
             Serving Northeastern NC & Hampton Roads
           </h2>
           <p className="text-xl text-foreground max-w-3xl mx-auto">
-            Your premier handyman service spanning the coastal regions of North Carolina 
+            Your premier property service provider spanning the coastal regions of North Carolina 
             and the Hampton Roads metropolitan area of Virginia.
           </p>
         </div>
@@ -119,7 +119,7 @@ const ServiceArea = () => {
                   </div>
                   <div className="flex items-center space-x-2 text-sm">
                     <CheckCircle className="text-primary" size={16} />
-                    <span>Licensed in North Carolina & Virginia</span>
+                    <span>Fully insured for your protection</span>
                   </div>
                 </div>
                 <div className="space-y-3">
@@ -153,7 +153,7 @@ const ServiceArea = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button variant="primary" size="lg">
-                Find My Handyman
+                Get Free Estimate
               </Button>
               <Button variant="outline" size="lg">
                 Call (919) 457-7325

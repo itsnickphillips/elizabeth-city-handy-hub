@@ -8,16 +8,16 @@ const faqs = [
     answer: "We handle a wide range of interior and exterior repairs including drywall patching, door adjustments, cabinet repairs, fence fixes, deck maintenance, and much more. If you're unsure whether we can help with your specific project, just give us a call!"
   },
   {
-    question: "Do you do major electrical or plumbing work?",
-    answer: "We handle basic electrical work like outlet installation, switch replacement, and light fixtures. For major electrical work (panel upgrades, rewiring) or plumbing (water heater installation, main line repairs), we can recommend licensed specialists in your area."
+    question: "Do you handle major plumbing or electrical work?",
+    answer: "We handle fixture replacements and minor repairs such as faucet swaps, light fixture installation, and ceiling fans. Major projects requiring licensed specialists will be referred to our trusted partners in your area."
   },
   {
-    question: "Are your handymen licensed and insured?",
-    answer: "Absolutely! All our team members are fully licensed, bonded, and insured. We also conduct background checks on all employees for your peace of mind and safety."
+    question: "Are you fully insured?",
+    answer: "Yes! We are fully insured for your protection and peace of mind. We also conduct background checks on all team members for your safety and security."
   },
   {
     question: "How do you schedule service appointments?",
-    answer: "We typically schedule services 1-2 weeks in advance to ensure quality preparation and proper planning. This allows us to allocate adequate time and bring the right materials for your project, ensuring the job is done right the first time."
+    answer: "In most cases, within 48 hours for smaller projects. Larger projects may require more lead time to ensure proper planning and preparation. We believe in doing quality work rather than rushing, which means better results for you."
   },
   {
     question: "Do you provide free estimates?",
@@ -29,7 +29,7 @@ const faqs = [
   },
   {
     question: "What if I'm not satisfied with the work?",
-    answer: "Your satisfaction is our top priority. We offer a 100% satisfaction guarantee on all our work. If you're not completely happy, we'll make it right at no additional cost."
+    answer: "Your satisfaction is our top priority. We offer a satisfaction guarantee on all our work. If there are any issues, we'll work with you to make it right. We believe in doing the job correctly the first time and building long-term relationships with our customers."
   },
   {
     question: "How do you price your services?",
@@ -47,7 +47,7 @@ const FAQ = () => {
             Frequently Asked Questions
           </h2>
           <p className="text-xl text-foreground max-w-3xl mx-auto">
-            Got questions about our handyman services across NC and VA? 
+            Got questions about our property services across NC and VA? 
             Here are answers to the most common questions from our customers.
           </p>
         </div>

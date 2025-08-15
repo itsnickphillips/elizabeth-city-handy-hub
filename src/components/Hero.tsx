@@ -15,13 +15,11 @@ const Hero = () => {
                 <span className="text-lg text-muted-foreground">Serving Northeastern NC & Hampton Roads</span>
               </div>
               <h1 className="text-5xl lg:text-6xl font-bold leading-tight mb-6 text-primary">
-                Professional and Reliable
-                <span className="text-primary block">Handyman Services</span>
-                in Your Neighborhood
+                Property Care You Can Trust
+                <span className="text-primary block">Serving Northeastern NC & Hampton Roads</span>
               </h1>
               <p className="text-xl mb-8 text-foreground font-normal leading-relaxed">
-                Repairs, Installations, and Maintenance done right—the first time.
-                Professional, licensed, and trusted by homeowners across NC and VA.
+                From repairs to refreshes, Horizon Property Services delivers quality work with local care.
               </p>
             </div>
 
@@ -29,7 +27,7 @@ const Hero = () => {
             <div className="flex items-center justify-start space-x-8 mb-8">
               <div className="flex items-center space-x-2">
                 <CheckCircle className="text-primary" size={18} />
-                <span className="text-sm text-foreground">Licensed & Insured</span>
+                <span className="text-sm text-foreground">Fully Insured</span>
               </div>
               <div className="flex items-center space-x-2">
                 <CheckCircle className="text-primary" size={18} />

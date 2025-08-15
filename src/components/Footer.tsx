@@ -21,32 +21,9 @@ const Footer = () => {
               Horizon<span className="text-accent"> Property Services</span>
             </div>
             <p className="text-accent mb-6">
-              Your trusted regional handyman service across Northeastern NC & Hampton Roads. 
+              Your trusted regional property service provider across Northeastern NC & Hampton Roads. 
               Professional repairs, installations, and maintenance for your home.
             </p>
-            
-            {/* Rating */}
-            <div className="flex items-center space-x-2 mb-4">
-              <div className="flex">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="text-accent fill-current" size={16} />
-                ))}
-              </div>
-              <span className="text-sm text-accent">4.9/5 from 127+ reviews</span>
-            </div>
-
-            {/* Social Links */}
-            <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                <Facebook size={20} />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                <Twitter size={20} />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                <Instagram size={20} />
-              </a>
-            </div>
           </div>
 
           {/* Services */}
@@ -55,8 +32,8 @@ const Footer = () => {
             <ul className="space-y-3 text-accent">
               <li><a href="#" className="hover:text-white transition-colors">General Repairs</a></li>
               <li><a href="#" className="hover:text-white transition-colors">Painting Services</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Electrical Work</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Plumbing Services</a></li>
+              <li><a href="#" className="hover:text-white transition-colors">Light Fixture & Fan Installation</a></li>
+              <li><a href="#" className="hover:text-white transition-colors">Plumbing Fixture Replacement</a></li>
               <li><a href="#" className="hover:text-white transition-colors">Home Maintenance</a></li>
               <li><a href="#" className="hover:text-white transition-colors">Installation Services</a></li>
             </ul>

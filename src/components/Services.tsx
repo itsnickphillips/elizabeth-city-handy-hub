@@ -57,10 +57,10 @@ const Services = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-primary mb-6">
-            Professional Handyman Services
+            Property Services You Can Trust
           </h2>
           <p className="text-xl text-foreground max-w-3xl mx-auto">
-            From minor repairs to major installations, our experienced team delivers quality workmanship 
+            From repairs to installations, our experienced team delivers quality workmanship 
             you can trust. Serving Northeastern NC and Hampton Roads with pride.
           </p>
         </div>
