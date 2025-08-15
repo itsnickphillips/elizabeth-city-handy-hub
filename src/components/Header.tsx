@@ -7,9 +7,11 @@ const Header = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center">
-            <div className="text-2xl font-bold text-primary">
-              Horizon<span className="text-primary"> Property Services</span>
-            </div>
+          <img 
+            src="https://yylgysaoxzwgzwudphcc.supabase.co/storage/v1/object/public/assets/HPS_Logo_TransparentBG.png"
+            alt="Horizon Property Services Logo"
+            className="h-10 w-auto"
+          />
           </div>
 
           {/* Navigation */}
