@@ -27,25 +27,25 @@ const services = [
   {
     icon: Zap,
     title: "Light Fixture & Fan Installation",
-    description: "We'll safely install your new light fixtures or ceiling fans so they look great and work perfectly. (Non-licensed electrical work only)",
+    description: "We'll safely install your new light fixtures or ceiling fans so they look great and work perfectly.",
     features: ["Light fixture mounting", "Ceiling fan installation", "Bulb & cover replacement", "Fixture swaps"]
   },
   {
     icon: Droplets,
     title: "Plumbing Fixture Replacement",
-    description: "We handle quick, non-licensed plumbing jobs to update or fix your fixtures.",
+    description: "We handle quick plumbing jobs to update or fix your fixtures with professional results.",
     features: ["Faucet & showerhead swaps", "Toilet flapper & handle repairs", "Minor leak fixes", "Drain cover replacements"]
   },
   {
     icon: Settings,
     title: "Home Maintenance",
-    description: "Prevent costly repairs with seasonal upkeep and home care.",
+    description: "Prevent costly repairs with seasonal upkeep and home care that keeps everything running smoothly.",
     features: ["Gutter cleaning", "Pressure washing", "Screen & storm door adjustments", "Seasonal prep tasks"]
   },
   {
     icon: Wrench,
     title: "Installation Services",
-    description: "Get your new items set up the right way — securely and neatly.",
+    description: "Get your new items set up the right way with secure, professional installation you can trust.",
     features: ["Appliance unboxing & placement", "Shelving & storage installation", "TV mounting", "Smart home device setup"]
   }
 ];
