@@ -44,10 +44,10 @@ const features = [
 ];
 
 const stats = [
-  { number: "500+", label: "Happy Customers" },
-  { number: "5★", label: "Average Rating" },
   { number: "100%", label: "Satisfaction Rate" },
-  { number: "10+", label: "Years Experience" }
+  { number: "Decades", label: "Combined Experience" },
+  { number: "2 States", label: "Service Area" },
+  { number: "24/7", label: "Quote Requests" }
 ];
 
 const WhyChooseUs = () => {
@@ -108,33 +108,31 @@ const WhyChooseUs = () => {
               Trusted by Homeowners Across NC & VA
             </h3>
             <div className="grid md:grid-cols-3 gap-8 items-center">
-              <div>
-                <div className="flex justify-center mb-4">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="text-white fill-current" size={24} />
-                  ))}
+              <div className="space-y-4">
+                <div className="flex items-center justify-center space-x-2">
+                  <CheckCircle className="text-white" size={20} />
+                  <span>Fully Insured</span>
                 </div>
-                <p className="text-lg">5-Star Customer Reviews</p>
+                <div className="flex items-center justify-center space-x-2">
+                  <CheckCircle className="text-white" size={20} />
+                  <span>Licensed for Eligible Work</span>
+                </div>
+              </div>
+              <div className="text-center">
+                <div className="text-4xl font-bold text-white mb-2">
+                  NC & VA
+                </div>
+                <p className="text-lg">Serving Both States</p>
               </div>
               <div className="space-y-4">
                 <div className="flex items-center justify-center space-x-2">
                   <CheckCircle className="text-white" size={20} />
-                  <span>BBB Accredited Business</span>
+                  <span>Satisfaction Guaranteed</span>
                 </div>
                 <div className="flex items-center justify-center space-x-2">
                   <CheckCircle className="text-white" size={20} />
-                  <span>Fully Licensed & Bonded</span>
+                  <span>Local Community Focus</span>
                 </div>
-                <div className="flex items-center justify-center space-x-2">
-                  <CheckCircle className="text-white" size={20} />
-                  <span>Comprehensive Insurance</span>
-                </div>
-              </div>
-              <div>
-                <div className="text-4xl font-bold text-white mb-2">
-                  10+
-                </div>
-                <p className="text-lg">Years Serving Our Community</p>
               </div>
             </div>
           </div>

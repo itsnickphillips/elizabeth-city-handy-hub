@@ -30,12 +30,12 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-6">Our Services</h3>
             <ul className="space-y-3 text-accent">
-              <li><a href="#" className="hover:text-white transition-colors">General Repairs</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Painting Services</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Light Fixture & Fan Installation</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Plumbing Fixture Replacement</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Home Maintenance</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Installation Services</a></li>
+              <li><a href="#services" className="hover:text-white transition-colors">General Repairs</a></li>
+              <li><a href="#services" className="hover:text-white transition-colors">Painting Services</a></li>
+              <li><a href="#services" className="hover:text-white transition-colors">Light Fixture & Fan Installation</a></li>
+              <li><a href="#services" className="hover:text-white transition-colors">Plumbing Fixture Replacement</a></li>
+              <li><a href="#services" className="hover:text-white transition-colors">Home Maintenance</a></li>
+              <li><a href="#services" className="hover:text-white transition-colors">Installation Services</a></li>
             </ul>
           </div>
 
@@ -45,10 +45,8 @@ const Footer = () => {
             <ul className="space-y-3 text-accent">
               <li><a href="#services" className="hover:text-white transition-colors">Services</a></li>
               <li><a href="#about" className="hover:text-white transition-colors">About Us</a></li>
-              <li><a href="#reviews" className="hover:text-white transition-colors">Customer Reviews</a></li>
               <li><a href="#contact" className="hover:text-white transition-colors">Contact</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Free Estimate</a></li>
-              
+              <li><a href="#contact" className="hover:text-white transition-colors">Free Estimate</a></li>
             </ul>
           </div>
 
@@ -59,7 +57,7 @@ const Footer = () => {
               <div className="flex items-center space-x-3">
                 <Phone size={18} />
                 <div>
-                  <p className="font-semibold text-white">(919) 457-7325</p>
+                  <a href="tel:+19194577325" className="font-semibold text-white hover:underline">(919) 457-7325</a>
                   <p className="text-sm">Available 7 days a week</p>
                 </div>
               </div>
@@ -67,7 +65,7 @@ const Footer = () => {
               <div className="flex items-center space-x-3">
                 <Mail size={18} />
                 <div>
-                  <p>office@horizonpropertyservices.com</p>
+                  <a href="mailto:office@horizonpropertyservices.com" className="hover:text-white transition-colors">office@horizonpropertyservices.com</a>
                   <p className="text-sm">2-hour response time</p>
                 </div>
               </div>
@@ -81,8 +79,8 @@ const Footer = () => {
               </div>
             </div>
 
-            <Button variant="cta" className="w-full mt-6">
-              Get Free Quote
+            <Button variant="primary" className="w-full mt-6" asChild>
+              <a href="#contact">Get Free Quote</a>
             </Button>
           </div>
         </div>

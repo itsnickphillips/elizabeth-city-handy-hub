@@ -1,17 +1,104 @@
+import { useState } from "react";
+import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+import * as z from "zod";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import { useToast } from "@/hooks/use-toast";
+import { supabase } from "@/integrations/supabase/client";
 import { 
   Phone, 
   Mail, 
   MapPin, 
   Clock, 
   MessageSquare,
-  Send
+  Send,
+  Loader2
 } from "lucide-react";
 
+const contactSchema = z.object({
+  firstName: z.string().min(1, "First name is required"),
+  lastName: z.string().min(1, "Last name is required"),
+  phone: z.string().min(10, "Please enter a valid phone number"),
+  email: z.string().email("Please enter a valid email address"),
+  serviceAddress: z.string().optional(),
+  serviceType: z.string().optional(),
+  projectDescription: z.string().min(10, "Please provide more details about your project")
+});
+
+type ContactFormData = z.infer<typeof contactSchema>;
+
 const Contact = () => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const { toast } = useToast();
+  
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors }
+  } = useForm<ContactFormData>({
+    resolver: zodResolver(contactSchema)
+  });
+
+  const onSubmit = async (data: ContactFormData) => {
+    setIsSubmitting(true);
+    
+    try {
+      // Store in Supabase
+      const { error } = await supabase
+        .from('contact_submissions')
+        .insert({
+          first_name: data.firstName,
+          last_name: data.lastName,
+          phone: data.phone,
+          email: data.email,
+          service_address: data.serviceAddress || null,
+          service_type: data.serviceType || null,
+          project_description: data.projectDescription
+        });
+
+      if (error) {
+        console.error('Supabase error:', error);
+        throw error;
+      }
+
+      // Create mailto link
+      const subject = `New Service Request from ${data.firstName} ${data.lastName}`;
+      const body = `
+Name: ${data.firstName} ${data.lastName}
+Phone: ${data.phone}
+Email: ${data.email}
+${data.serviceAddress ? `Service Address: ${data.serviceAddress}` : ''}
+${data.serviceType ? `Service Type: ${data.serviceType}` : ''}
+
+Project Description:
+${data.projectDescription}
+      `.trim();
+      
+      const mailtoLink = `mailto:office@horizonpropertyservices.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      window.location.href = mailtoLink;
+
+      toast({
+        title: "Request Submitted Successfully!",
+        description: "We've received your request and will contact you within 2 hours during business hours.",
+      });
+      
+      reset();
+    } catch (error) {
+      console.error('Form submission error:', error);
+      toast({
+        title: "Submission Failed",
+        description: "There was an error submitting your request. Please try calling us directly at (919) 457-7325.",
+        variant: "destructive"
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <section id="contact" className="py-20 bg-white">
       <div className="container mx-auto px-4">
@@ -36,68 +123,124 @@ const Contact = () => {
               </CardTitle>
             </CardHeader>
             <CardContent className="space-y-6">
-              <div className="grid md:grid-cols-2 gap-4">
+              <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
+                <div className="grid md:grid-cols-2 gap-4">
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-2">
+                      First Name *
+                    </label>
+                    <Input 
+                      {...register("firstName")}
+                      placeholder="Enter your first name"
+                      className={errors.firstName ? "border-red-500" : ""}
+                    />
+                    {errors.firstName && (
+                      <p className="text-red-500 text-sm mt-1">{errors.firstName.message}</p>
+                    )}
+                  </div>
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-2">
+                      Last Name *
+                    </label>
+                    <Input 
+                      {...register("lastName")}
+                      placeholder="Enter your last name"
+                      className={errors.lastName ? "border-red-500" : ""}
+                    />
+                    {errors.lastName && (
+                      <p className="text-red-500 text-sm mt-1">{errors.lastName.message}</p>
+                    )}
+                  </div>
+                </div>
+                
+                <div className="grid md:grid-cols-2 gap-4">
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-2">
+                      Phone Number *
+                    </label>
+                    <Input 
+                      {...register("phone")}
+                      placeholder="(919) 457-7325"
+                      className={errors.phone ? "border-red-500" : ""}
+                    />
+                    {errors.phone && (
+                      <p className="text-red-500 text-sm mt-1">{errors.phone.message}</p>
+                    )}
+                  </div>
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-2">
+                      Email Address *
+                    </label>
+                    <Input 
+                      {...register("email")}
+                      type="email"
+                      placeholder="your.email@example.com"
+                      className={errors.email ? "border-red-500" : ""}
+                    />
+                    {errors.email && (
+                      <p className="text-red-500 text-sm mt-1">{errors.email.message}</p>
+                    )}
+                  </div>
+                </div>
+
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">
-                    First Name *
+                    Service Address
                   </label>
-                  <Input placeholder="Enter your first name" />
+                  <Input 
+                    {...register("serviceAddress")}
+                    placeholder="Where do you need the work done?"
+                  />
                 </div>
+
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">
-                    Last Name *
+                    Type of Service Needed
                   </label>
-                  <Input placeholder="Enter your last name" />
+                  <Input 
+                    {...register("serviceType")}
+                    placeholder="e.g., Light fixture installation, Painting, Plumbing fixture replacement"
+                  />
                 </div>
-              </div>
-              
-              <div className="grid md:grid-cols-2 gap-4">
+
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">
-                    Phone Number *
+                    Project Description *
                   </label>
-                  <Input placeholder="(919) 457-7325" />
+                  <Textarea 
+                    {...register("projectDescription")}
+                    placeholder="Please describe your project in detail. Include any specific requirements, timeline, or questions you have."
+                    className={`min-h-[120px] ${errors.projectDescription ? "border-red-500" : ""}`}
+                  />
+                  {errors.projectDescription && (
+                    <p className="text-red-500 text-sm mt-1">{errors.projectDescription.message}</p>
+                  )}
                 </div>
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
-                    Email Address *
-                  </label>
-                  <Input placeholder="your.email@example.com" />
-                </div>
-              </div>
 
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">
-                  Service Address
-                </label>
-                <Input placeholder="Where do you need the work done?" />
-              </div>
+                <Button 
+                  type="submit" 
+                  variant="primary" 
+                  size="lg" 
+                  className="w-full"
+                  disabled={isSubmitting}
+                >
+                  {isSubmitting ? (
+                    <>
+                      <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                      Submitting...
+                    </>
+                  ) : (
+                    <>
+                      <Send className="mr-2" size={20} />
+                      Send My Request
+                    </>
+                  )}
+                </Button>
 
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">
-                  Type of Service Needed
-                </label>
-                <Input placeholder="e.g., Plumbing repair, Painting, Electrical work" />
-              </div>
-
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">
-                  Project Description *
-                </label>
-                <Textarea 
-                  placeholder="Please describe your project in detail. Include any specific requirements, timeline, or questions you have."
-                  className="min-h-[120px]"
-                />
-              </div>
-
-              <Button variant="cta" size="lg" className="w-full">
-                <Send className="mr-2" size={20} />
-                Send My Request
-              </Button>
-
-              <p className="text-sm text-gray-500 text-center">
-                We'll respond to your request within 2 hours during business hours
-              </p>
+                <p className="text-sm text-gray-500 text-center">
+                  We'll respond to your request within 2 hours during business hours
+                </p>
+              </form>
             </CardContent>
           </Card>
 
@@ -117,7 +260,12 @@ const Contact = () => {
                     </div>
                     <div>
                       <p className="font-semibold text-gray-900">Call Us Now</p>
-                      <p className="text-xl text-primary font-bold">(919) 457-7325</p>
+                      <a 
+                        href="tel:+19194577325" 
+                        className="text-xl text-primary font-bold hover:underline"
+                      >
+                        (919) 457-7325
+                      </a>
                       <p className="text-sm text-gray-600">Available 7 days a week</p>
                     </div>
                   </div>
@@ -128,7 +276,12 @@ const Contact = () => {
                     </div>
                     <div>
                       <p className="font-semibold text-gray-900">Email Us</p>
-                      <p className="text-primary">office@horizonpropertyservices.com</p>
+                      <a 
+                        href="mailto:office@horizonpropertyservices.com"
+                        className="text-primary hover:underline"
+                      >
+                        office@horizonpropertyservices.com
+                      </a>
                       <p className="text-sm text-gray-600">We respond within 2 hours</p>
                     </div>
                   </div>
@@ -140,7 +293,7 @@ const Contact = () => {
                     <div>
                       <p className="font-semibold text-gray-900">Service Area</p>
                       <p className="text-gray-600">Northeastern NC & Hampton Roads</p>
-                      <p className="text-sm text-gray-600">Licensed in North Carolina & Virginia</p>
+                      <p className="text-sm text-gray-600">Fully Insured – Licensed for eligible work</p>
                     </div>
                   </div>
 
@@ -152,13 +305,11 @@ const Contact = () => {
                       <p className="font-semibold text-gray-900">Business Hours</p>
                       <p className="text-gray-600">Mon-Fri: 7AM - 7PM</p>
                       <p className="text-gray-600">Sat-Sun: 8AM - 5PM</p>
-                      
                     </div>
                   </div>
                 </div>
               </CardContent>
             </Card>
-
           </div>
         </div>
       </div>

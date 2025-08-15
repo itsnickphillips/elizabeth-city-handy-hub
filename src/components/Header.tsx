@@ -22,9 +22,6 @@ const Header = () => {
             <a href="#about" className="text-foreground hover:text-primary transition-colors">
               About
             </a>
-            <a href="#reviews" className="text-foreground hover:text-primary transition-colors">
-              Reviews
-            </a>
             <a href="#contact" className="text-foreground hover:text-primary transition-colors">
               Contact
             </a>
@@ -32,8 +29,8 @@ const Header = () => {
 
           {/* Contact Info & CTA */}
           <div className="flex items-center space-x-4">
-            <Button variant="primary" size="sm">
-              Get Free Quote
+            <Button variant="primary" size="sm" asChild>
+              <a href="#contact">Get Free Quote</a>
             </Button>
           </div>
         </div>
