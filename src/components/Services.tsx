@@ -15,38 +15,38 @@ const services = [
   {
     icon: Hammer,
     title: "General Repairs & Maintenance",
-    description: "From fixing squeaky doors to patching holes in walls, we handle all your general home repair needs with precision and care.",
-    features: ["Drywall repair & patching", "Door & window adjustments", "Caulking & weatherstripping", "Basic carpentry & trim work"]
+    description: "From squeaky doors to wall repairs, we handle everyday fixes with care and precision to keep your home in top shape.",
+    features: ["Drywall patching & repair", "Door & window adjustments", "Caulking & weatherstripping", "Light carpentry & trim work"]
   },
   {
     icon: Paintbrush,
     title: "Painting Services",
-    description: "Transform your space with our professional interior and exterior painting services. Quality materials and expert application guaranteed.",
-    features: ["Interior painting", "Exterior touch-ups", "Cabinet refinishing", "Staining & varnishing"]
+    description: "Give your home a fresh look inside or out with quality paintwork done right the first time.",
+    features: ["Interior room painting", "Exterior touch-ups", "Cabinet & furniture refinishing", "Staining & sealing"]
   },
   {
     icon: Zap,
-    title: "Electrical Work",
-    description: "Safe and reliable electrical services from licensed professionals. From outlets to ceiling fans, we've got you covered.",
-    features: ["Outlet & switch installation", "Light fixture mounting", "Ceiling fan installation", "GFCI outlet upgrades"]
+    title: "Light Fixture & Fan Installation",
+    description: "We'll safely install your new light fixtures or ceiling fans so they look great and work perfectly. (Non-licensed electrical work only)",
+    features: ["Light fixture mounting", "Ceiling fan installation", "Bulb & cover replacement", "Fixture swaps"]
   },
   {
     icon: Droplets,
-    title: "Plumbing Services",
-    description: "Quick and effective plumbing solutions for your home. We fix leaks, unclog drains, and install fixtures promptly.",
-    features: ["Leak repairs", "Drain cleaning", "Fixture installation", "Toilet repair"]
+    title: "Plumbing Fixture Replacement",
+    description: "We handle quick, non-licensed plumbing jobs to update or fix your fixtures.",
+    features: ["Faucet & showerhead swaps", "Toilet flapper & handle repairs", "Minor leak fixes", "Drain cover replacements"]
   },
   {
     icon: Settings,
     title: "Home Maintenance",
-    description: "Keep your home in top condition with our comprehensive maintenance services. Preventive care saves money long-term.",
-    features: ["Gutter cleaning", "Pressure washing", "HVAC maintenance", "Seasonal prep"]
+    description: "Prevent costly repairs with seasonal upkeep and home care.",
+    features: ["Gutter cleaning", "Pressure washing", "Screen & storm door adjustments", "Seasonal prep tasks"]
   },
   {
     icon: Wrench,
     title: "Installation Services",
-    description: "Professional installation of appliances, fixtures, and home improvements. Get it done right the first time.",
-    features: ["Appliance installation", "Shelving & storage", "TV mounting", "Smart home devices"]
+    description: "Get your new items set up the right way — securely and neatly.",
+    features: ["Appliance unboxing & placement", "Shelving & storage installation", "TV mounting", "Smart home device setup"]
   }
 ];
 
