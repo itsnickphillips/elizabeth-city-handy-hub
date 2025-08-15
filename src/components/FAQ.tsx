@@ -17,7 +17,7 @@ const faqs = [
   },
   {
     question: "How do you schedule service appointments?",
-    answer: "In most cases, within 48 hours for smaller projects. Larger projects may require more lead time to ensure proper planning and preparation. We believe in doing quality work rather than rushing, which means better results for you."
+    answer: "In most cases, within 5-10 business days for smaller projects. Larger projects may require more lead time to ensure proper planning and preparation. We believe in doing quality work rather than rushing, which means better results for you."
   },
   {
     question: "Do you provide free estimates?",
@@ -29,7 +29,7 @@ const faqs = [
   },
   {
     question: "What if I'm not satisfied with the work?",
-    answer: "Your satisfaction is our top priority. We offer a satisfaction guarantee on all our work. If there are any issues, we'll work with you to make it right. We believe in doing the job correctly the first time and building long-term relationships with our customers."
+    answer: "We stand behind our quality workmanship and offer a satisfaction guarantee on all completed work. If there are legitimate concerns with our craftsmanship, we'll work with you to address them. Please note that our guarantee covers workmanship issues, not changes in project scope or unreasonable expectations beyond the original agreement."
   },
   {
     question: "How do you price your services?",
