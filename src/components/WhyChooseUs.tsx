@@ -13,8 +13,8 @@ import {
 const features = [
   {
     icon: Shield,
-    title: "Licensed & Insured",
-    description: "Fully licensed and insured for your peace of mind. Your property and investment are protected."
+    title: "Professional & Reliable",
+    description: "Fully insured for your peace of mind. Your property and investment are protected with professional service."
   },
   {
     icon: Clock,
@@ -115,7 +115,7 @@ const WhyChooseUs = () => {
                 </div>
                 <div className="flex items-center justify-center space-x-2">
                   <CheckCircle className="text-white" size={20} />
-                  <span>Licensed for Eligible Work</span>
+                  <span>Background Checked</span>
                 </div>
               </div>
               <div className="text-center">
