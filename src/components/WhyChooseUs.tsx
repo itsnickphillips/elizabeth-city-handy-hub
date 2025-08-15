@@ -46,7 +46,7 @@ const features = [
 const stats = [
   { number: "500+", label: "Happy Customers" },
   { number: "5★", label: "Average Rating" },
-  { number: "24/7", label: "Emergency Service" },
+  { number: "100%", label: "Satisfaction Rate" },
   { number: "10+", label: "Years Experience" }
 ];
 

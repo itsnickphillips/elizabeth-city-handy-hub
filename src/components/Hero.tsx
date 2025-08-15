@@ -72,7 +72,7 @@ const Hero = () => {
                   <Clock size={16} />
                   <span>Available 7 Days a Week</span>
                 </div>
-                <p>Emergency Services Available</p>
+                
               </div>
             </div>
           </div>

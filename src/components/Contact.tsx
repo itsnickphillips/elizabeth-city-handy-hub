@@ -152,26 +152,13 @@ const Contact = () => {
                       <p className="font-semibold text-gray-900">Business Hours</p>
                       <p className="text-gray-600">Mon-Fri: 7AM - 7PM</p>
                       <p className="text-gray-600">Sat-Sun: 8AM - 5PM</p>
-                      <p className="text-sm text-gray-600">Emergency service available 24/7</p>
+                      
                     </div>
                   </div>
                 </div>
               </CardContent>
             </Card>
 
-            {/* Emergency Service */}
-            <Card className="bg-primary text-white border-0">
-              <CardContent className="p-8 text-center">
-                <h3 className="text-2xl font-bold mb-4">Emergency Service Available</h3>
-                <p className="mb-6">
-                  Plumbing emergency? Electrical issue? We offer 24/7 emergency services 
-                  for urgent repairs that can't wait.
-                </p>
-                <Button variant="secondary" size="lg" className="w-full">
-                  Call Emergency Line: (919) 457-7325
-                </Button>
-              </CardContent>
-            </Card>
           </div>
         </div>
       </div>

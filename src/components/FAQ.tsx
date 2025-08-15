@@ -17,7 +17,7 @@ const faqs = [
   },
   {
     question: "How quickly can you respond to service requests?",
-    answer: "We offer same-day service for most repairs when you call before noon. Emergency services are available 24/7 for urgent issues like water leaks or electrical problems."
+    answer: "We offer same-day service for most repairs when you call before noon. Our team typically responds to service requests within 2-4 hours during business hours."
   },
   {
     question: "Do you provide free estimates?",
