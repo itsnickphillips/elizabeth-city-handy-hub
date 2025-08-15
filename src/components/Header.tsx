@@ -8,7 +8,7 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center">
           <img 
-            src="https://yylgysaoxzwgzwudphcc.supabase.co/storage/v1/object/public/assets/HPS_Logo_TransparentBG.png"
+            src="https://yylgysaoxzwgzwudphcc.supabase.co/storage/v1/object/public/assets/HPS_Logo_TransparentBG_Bigger.png"
             alt="Horizon Property Services Logo"
             className="h-14 w-auto"
           />
