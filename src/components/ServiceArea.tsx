@@ -115,7 +115,7 @@ const ServiceArea = () => {
                   </div>
                   <div className="flex items-center space-x-2 text-sm">
                     <CheckCircle className="text-primary" size={16} />
-                    <span>Fast response times in both states</span>
+                    <span>Dependable service across both states</span>
                   </div>
                   <div className="flex items-center space-x-2 text-sm">
                     <CheckCircle className="text-primary" size={16} />

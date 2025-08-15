@@ -32,7 +32,7 @@ const reviews = [
     location: "Chesapeake, VA",
     rating: 5,
     date: "2 months ago",
-    text: "Fast response for a plumbing issue. Fixed our leaky faucet and toilet problem the same day. Transparent pricing and excellent workmanship. Very satisfied!",
+    text: "Professional service for our plumbing issues. Fixed our leaky faucet and toilet problem with careful attention to detail. Transparent pricing and excellent workmanship. Very satisfied!",
     service: "Plumbing Services"
   }
 ];

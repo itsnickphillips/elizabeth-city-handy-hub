@@ -33,7 +33,7 @@ const services = [
   {
     icon: Droplets,
     title: "Plumbing Fixture Replacement",
-    description: "We handle quick plumbing jobs to update or fix your fixtures with professional results.",
+    description: "We handle efficient plumbing work to update or fix your fixtures with professional results.",
     features: ["Faucet & showerhead swaps", "Toilet flapper & handle repairs", "Minor leak fixes", "Drain cover replacements"]
   },
   {

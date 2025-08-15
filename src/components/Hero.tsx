@@ -15,7 +15,7 @@ const Hero = () => {
                 <span className="text-lg text-muted-foreground">Serving Northeastern NC & Hampton Roads</span>
               </div>
               <h1 className="text-5xl lg:text-6xl font-bold leading-tight mb-6 text-primary">
-                Fast and Reliable
+                Professional and Reliable
                 <span className="text-primary block">Handyman Services</span>
                 in Your Neighborhood
               </h1>
@@ -33,7 +33,7 @@ const Hero = () => {
               </div>
               <div className="flex items-center space-x-2">
                 <CheckCircle className="text-primary" size={18} />
-                <span className="text-sm text-foreground">Same Day Service</span>
+                <span className="text-sm text-foreground">Scheduled Service</span>
               </div>
             </div>
 
@@ -53,7 +53,7 @@ const Hero = () => {
                   Ready to Get Started?
                 </h3>
                 <p className="text-muted-foreground">
-                  Call now for immediate service or schedule your free consultation
+                  Call now or schedule your free consultation
                 </p>
               </div>
 

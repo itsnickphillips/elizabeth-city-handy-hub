@@ -16,8 +16,8 @@ const faqs = [
     answer: "Absolutely! All our team members are fully licensed, bonded, and insured. We also conduct background checks on all employees for your peace of mind and safety."
   },
   {
-    question: "How quickly can you respond to service requests?",
-    answer: "We offer same-day service for most repairs when you call before noon. Our team typically responds to service requests within 2-4 hours during business hours."
+    question: "How do you schedule service appointments?",
+    answer: "We typically schedule services 1-2 weeks in advance to ensure quality preparation and proper planning. This allows us to allocate adequate time and bring the right materials for your project, ensuring the job is done right the first time."
   },
   {
     question: "Do you provide free estimates?",

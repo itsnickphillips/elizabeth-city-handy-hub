@@ -18,8 +18,8 @@ const features = [
   },
   {
     icon: Clock,
-    title: "Same Day Service",
-    description: "Quick response times with same-day service available. We respect your time and schedule."
+    title: "Reliable Scheduling",
+    description: "Professional planning with advance scheduling that ensures proper preparation and quality results every time."
   },
   {
     icon: DollarSign,

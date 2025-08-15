@@ -107,7 +107,7 @@ const Contact = () => {
             <Card className="shadow-md border-0">
               <CardContent className="p-8">
                 <h3 className="text-2xl font-bold text-gray-900 mb-6">
-                  Need Immediate Service?
+                  Ready to Schedule Service?
                 </h3>
                 
                 <div className="space-y-6">
