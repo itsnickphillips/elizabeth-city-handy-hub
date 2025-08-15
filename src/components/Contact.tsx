@@ -128,7 +128,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <p className="font-semibold text-gray-900">Email Us</p>
-                      <p className="text-primary">office@elizabethcitypropertyservices.com</p>
+                      <p className="text-primary">office@horizonpropertyservices.com</p>
                       <p className="text-sm text-gray-600">We respond within 2 hours</p>
                     </div>
                   </div>

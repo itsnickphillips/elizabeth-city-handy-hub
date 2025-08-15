@@ -18,7 +18,7 @@ const Footer = () => {
           {/* Company Info */}
           <div>
             <div className="text-2xl font-bold mb-4">
-              ElizabethCity<span className="text-accent">Property Services</span>
+              Horizon<span className="text-accent"> Property Services</span>
             </div>
             <p className="text-accent mb-6">
               Your trusted local handyman service in Elizabeth City, NC. 
@@ -90,7 +90,7 @@ const Footer = () => {
               <div className="flex items-center space-x-3">
                 <Mail size={18} />
                 <div>
-                  <p>office@elizabethcitypropertyservices.com</p>
+                  <p>office@horizonpropertyservices.com</p>
                   <p className="text-sm">2-hour response time</p>
                 </div>
               </div>
@@ -116,7 +116,7 @@ const Footer = () => {
         <div className="container mx-auto px-4 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
             <div className="mb-4 md:mb-0">
-              <p>&copy; 2024 ElizabethCity Pro. All rights reserved.</p>
+              <p>&copy; 2024 Horizon Property Services. All rights reserved.</p>
             </div>
             <div className="flex space-x-6">
               <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
