@@ -4,27 +4,22 @@ import { MapPin, Clock, CheckCircle, Phone } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section 
-      className="relative py-20 bg-cover bg-center bg-no-repeat bg-gradient-to-r from-primary/10 to-primary/5"
-      style={{ backgroundImage: `url('/lovable-uploads/41fdf7cc-342c-4608-87f2-931cb40d355f.png')` }}
-    >
-      {/* Overlay for text readability */}
-      <div className="absolute inset-0 bg-black/30"></div>
-      <div className="container mx-auto px-4 relative z-10">
+    <section className="bg-white py-20">
+      <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Column - Text Content */}
           <div>
             <div className="mb-8">
               <div className="flex items-center space-x-2 mb-6">
-                <MapPin className="text-white" size={20} />
-                <span className="text-lg text-white/90 drop-shadow-md">Serving Northeastern NC & Hampton Roads</span>
+                <MapPin className="text-primary" size={20} />
+                <span className="text-lg text-muted-foreground">Serving Northeastern NC & Hampton Roads</span>
               </div>
-              <h1 className="text-5xl lg:text-6xl font-bold leading-tight mb-6 text-white drop-shadow-lg">
+              <h1 className="text-5xl lg:text-6xl font-bold leading-tight mb-6 text-primary">
                 Fast and Reliable
-                <span className="text-white block">Handyman Services</span>
+                <span className="text-primary block">Handyman Services</span>
                 in Your Neighborhood
               </h1>
-              <p className="text-xl mb-8 text-white font-normal leading-relaxed drop-shadow-md">
+              <p className="text-xl mb-8 text-foreground font-normal leading-relaxed">
                 Repairs, Installations, and Maintenance done right—the first time.
                 Professional, licensed, and trusted by homeowners across NC and VA.
               </p>
@@ -33,12 +28,12 @@ const Hero = () => {
             {/* Trust Indicators */}
             <div className="flex items-center justify-start space-x-8 mb-8">
               <div className="flex items-center space-x-2">
-                <CheckCircle className="text-white" size={18} />
-                <span className="text-sm text-white drop-shadow-md">Licensed & Insured</span>
+                <CheckCircle className="text-primary" size={18} />
+                <span className="text-sm text-foreground">Licensed & Insured</span>
               </div>
               <div className="flex items-center space-x-2">
-                <CheckCircle className="text-white" size={18} />
-                <span className="text-sm text-white drop-shadow-md">Same Day Service</span>
+                <CheckCircle className="text-primary" size={18} />
+                <span className="text-sm text-foreground">Same Day Service</span>
               </div>
             </div>
 
