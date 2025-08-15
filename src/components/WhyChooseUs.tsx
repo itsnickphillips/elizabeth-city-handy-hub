@@ -38,8 +38,8 @@ const features = [
   },
   {
     icon: MapPin,
-    title: "Local Elizabeth City Business",
-    description: "Proudly serving our community for years. We're your neighbors, not just another contractor."
+    title: "Regional NC & VA Business",
+    description: "Proudly serving communities across both states for years. We're your neighbors, not just another contractor."
   }
 ];
 
@@ -57,10 +57,10 @@ const WhyChooseUs = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-primary mb-6">
-            Why Choose ElizabethCity Pro?
+            Why Choose Horizon Property Services?
           </h2>
           <p className="text-xl text-foreground max-w-3xl mx-auto">
-            When you need reliable handyman services in Elizabeth City, NC, choose the team that puts 
+            When you need reliable handyman services across NC and VA, choose the team that puts 
             quality, integrity, and customer satisfaction first.
           </p>
         </div>
@@ -105,7 +105,7 @@ const WhyChooseUs = () => {
         <div className="bg-primary rounded-lg p-8 lg:p-12 text-white text-center">
           <div className="max-w-4xl mx-auto">
             <h3 className="text-3xl font-bold mb-6">
-              Trusted by Elizabeth City Homeowners
+              Trusted by Homeowners Across NC & VA
             </h3>
             <div className="grid md:grid-cols-3 gap-8 items-center">
               <div>

@@ -12,7 +12,7 @@ const Hero = () => {
             <div className="mb-8">
               <div className="flex items-center space-x-2 mb-6">
                 <MapPin className="text-primary" size={20} />
-                <span className="text-lg text-muted-foreground">Serving Elizabeth City, NC & Surrounding Areas</span>
+                <span className="text-lg text-muted-foreground">Serving Northeastern NC & Hampton Roads</span>
               </div>
               <h1 className="text-5xl lg:text-6xl font-bold leading-tight mb-6 text-primary">
                 Fast and Reliable
@@ -21,7 +21,7 @@ const Hero = () => {
               </h1>
               <p className="text-xl mb-8 text-foreground font-normal leading-relaxed">
                 Repairs, Installations, and Maintenance done right—the first time.
-                Professional, licensed, and trusted by Elizabeth City homeowners.
+                Professional, licensed, and trusted by homeowners across NC and VA.
               </p>
             </div>
 

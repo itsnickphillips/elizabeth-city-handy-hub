@@ -9,7 +9,7 @@ const faqs = [
   },
   {
     question: "Do you do major electrical or plumbing work?",
-    answer: "We handle basic electrical work like outlet installation, switch replacement, and light fixtures. For major electrical work (panel upgrades, rewiring) or plumbing (water heater installation, main line repairs), we can recommend licensed specialists in Elizabeth City."
+    answer: "We handle basic electrical work like outlet installation, switch replacement, and light fixtures. For major electrical work (panel upgrades, rewiring) or plumbing (water heater installation, main line repairs), we can recommend licensed specialists in your area."
   },
   {
     question: "Are your handymen licensed and insured?",
@@ -25,7 +25,7 @@ const faqs = [
   },
   {
     question: "What areas do you serve?",
-    answer: "We proudly serve Elizabeth City, Camden, Hertford, and all of Pasquotank County, NC. We also serve select areas in Currituck and Chowan counties. Call us to confirm service in your specific location."
+    answer: "We proudly serve the entire Northeastern North Carolina region including Elizabeth City, Manteo, and the Outer Banks, plus the Hampton Roads area of Virginia including Norfolk, Virginia Beach, Chesapeake, and Portsmouth. Call us to confirm service in your specific location."
   },
   {
     question: "What if I'm not satisfied with the work?",
@@ -47,7 +47,7 @@ const FAQ = () => {
             Frequently Asked Questions
           </h2>
           <p className="text-xl text-foreground max-w-3xl mx-auto">
-            Got questions about our handyman services in Elizabeth City? 
+            Got questions about our handyman services across NC and VA? 
             Here are answers to the most common questions from our customers.
           </p>
         </div>

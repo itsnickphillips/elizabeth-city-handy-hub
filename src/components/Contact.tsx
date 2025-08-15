@@ -139,8 +139,8 @@ const Contact = () => {
                     </div>
                     <div>
                       <p className="font-semibold text-gray-900">Service Area</p>
-                      <p className="text-gray-600">Elizabeth City, NC</p>
-                      <p className="text-sm text-gray-600">& surrounding areas</p>
+                      <p className="text-gray-600">Northeastern NC & Hampton Roads</p>
+                      <p className="text-sm text-gray-600">Licensed in North Carolina & Virginia</p>
                     </div>
                   </div>
 

@@ -21,7 +21,7 @@ const Footer = () => {
               Horizon<span className="text-accent"> Property Services</span>
             </div>
             <p className="text-accent mb-6">
-              Your trusted local handyman service in Elizabeth City, NC. 
+              Your trusted regional handyman service across Northeastern NC & Hampton Roads. 
               Professional repairs, installations, and maintenance for your home.
             </p>
             

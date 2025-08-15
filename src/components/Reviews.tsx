@@ -5,15 +5,15 @@ import { Star, Quote } from "lucide-react";
 const reviews = [
   {
     name: "Sarah Johnson",
-    location: "Elizabeth City, NC",
+    location: "Virginia Beach, VA",
     rating: 5,
     date: "2 weeks ago",
-    text: "ElizabethCity Pro did an amazing job fixing our kitchen cabinet doors and installing new shelving. The work was completed quickly and professionally. Would definitely recommend to anyone in the Elizabeth City area!",
+    text: "Horizon Property Services did an amazing job fixing our kitchen cabinet doors and installing new shelving. The work was completed quickly and professionally. Would definitely recommend to anyone in the Hampton Roads area!",
     service: "Kitchen Repairs & Installation"
   },
   {
     name: "Mike Rodriguez",
-    location: "Camden, NC", 
+    location: "Norfolk, VA", 
     rating: 5,
     date: "1 month ago",
     text: "I needed several electrical outlets installed in my home office and a ceiling fan mounted. The technician was punctual, knowledgeable, and cleaned up perfectly after the job. Great communication throughout the project!",
@@ -29,7 +29,7 @@ const reviews = [
   },
   {
     name: "Robert Wilson",
-    location: "Hertford, NC",
+    location: "Chesapeake, VA",
     rating: 5,
     date: "2 months ago",
     text: "Fast response for a plumbing emergency. Fixed our leaky faucet and toilet issue the same day. Transparent pricing and excellent workmanship. Very satisfied!",
@@ -47,7 +47,7 @@ const Reviews = () => {
             What Our Customers Say
           </h2>
           <p className="text-xl text-foreground max-w-3xl mx-auto">
-            Don't just take our word for it. See why Elizabeth City homeowners trust us 
+            Don't just take our word for it. See why homeowners across NC and VA trust us 
             with their most important projects.
           </p>
         </div>

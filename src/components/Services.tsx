@@ -61,7 +61,7 @@ const Services = () => {
           </h2>
           <p className="text-xl text-foreground max-w-3xl mx-auto">
             From minor repairs to major installations, our experienced team delivers quality workmanship 
-            you can trust. Serving Elizabeth City, NC and surrounding areas with pride.
+            you can trust. Serving Northeastern NC and Hampton Roads with pride.
           </p>
         </div>
 
