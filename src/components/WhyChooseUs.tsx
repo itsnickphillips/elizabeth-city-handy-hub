@@ -46,7 +46,7 @@ const features = [
 
 const stats = [
   { number: "100%", label: "Satisfaction Rate" },
-  { number: "Decades", label: "Combined Experience" },
+  { number: "Trusted", label: "Local Business" },
   { number: "2 States", label: "Service Area" },
   { number: "24/7", label: "Quote Requests" }
 ];
