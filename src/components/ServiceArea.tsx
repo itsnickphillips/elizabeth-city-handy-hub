@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { CheckCircle, Award, Shield, Users } from "lucide-react";
 
 const ServiceArea = () => {
+  // Updated with new city lists and ZIP code format
   const northCarolinaCities = [
     "Corolla", "Nags Head", "Kill Devil Hills", "Kitty Hawk", "Manteo",
     "Moyock", "Elizabeth City", "Grandy", "Currituck", "Powells Point"
