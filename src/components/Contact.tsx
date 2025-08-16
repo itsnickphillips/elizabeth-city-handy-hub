@@ -160,7 +160,7 @@ ${data.projectDescription}
                     </label>
                     <Input 
                       {...register("phone")}
-                      placeholder="(919) 457-7325"
+                      placeholder="(xxx) xxx-xxxx"
                       className={errors.phone ? "border-red-500" : ""}
                     />
                     {errors.phone && (
