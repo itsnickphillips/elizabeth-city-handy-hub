@@ -87,7 +87,7 @@ const Contact = () => {
         if (emailResponse.ok) {
           toast({
             title: "Request Submitted Successfully!",
-            description: "We've received your request and sent you a confirmation email. We'll contact you within 2 hours during business hours.",
+            description: "Thanks for reaching out! We'll be in touch shortly.",
           });
         } else {
           throw new Error('Email sending failed');
