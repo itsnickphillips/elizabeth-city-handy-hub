@@ -24,25 +24,25 @@ const Footer = () => {
         </div>
 
         {/* Contact Information */}
-        <div className="mb-6">
-          <h3 className="text-lg font-semibold mb-4 text-white text-center">Contact Us</h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 text-center sm:text-left">
+        <div className="mb-4">
+          <h3 className="text-lg font-semibold mb-2 text-white text-center">Contact Us</h3>
+          <div className="flex flex-col sm:flex-row justify-center items-center gap-3 sm:gap-8">
             
             {/* Phone */}
-            <div className="flex items-center justify-center sm:justify-start space-x-3">
-              <Phone size={24} className="flex-shrink-0 text-accent" />
-              <div>
-                <a href="tel:+19194577325" className="font-bold text-white hover:text-accent transition-colors text-lg">(919) 457-7325</a>
-                <p className="text-sm text-accent">Available 7 days a week</p>
+            <div className="flex items-center space-x-2">
+              <Phone size={20} className="text-accent" />
+              <div className="text-center sm:text-left">
+                <a href="tel:+19194577325" className="font-bold text-white hover:text-accent transition-colors text-base">(919) 457-7325</a>
+                <p className="text-xs text-accent">Available 7 days a week</p>
               </div>
             </div>
             
             {/* Email */}
-            <div className="flex items-center justify-center sm:justify-start space-x-3">
-              <Mail size={24} className="flex-shrink-0 text-accent" />
-              <div>
-                <a href="mailto:office@horizonpropertyservice.com" className="font-semibold text-white hover:text-accent transition-colors text-sm sm:text-base">office@horizonpropertyservice.com</a>
-                <p className="text-sm text-accent">2-hour response time</p>
+            <div className="flex items-center space-x-2">
+              <Mail size={20} className="text-accent" />
+              <div className="text-center sm:text-left">
+                <a href="mailto:office@horizonpropertyservice.com" className="font-semibold text-white hover:text-accent transition-colors text-sm">office@horizonpropertyservice.com</a>
+                <p className="text-xs text-accent">2-hour response time</p>
               </div>
             </div>
           </div>
