@@ -12,7 +12,7 @@ const Footer = () => {
       {/* Main Footer */}
       <div className="container mx-auto px-4 py-6 sm:py-8">
         {/* Logo Section */}
-        <div className="text-center mb-6">
+        <div className="text-center mb-3">
           <img 
             src={hpsLogo} 
             alt="Horizon Property Services Logo" 
@@ -24,25 +24,17 @@ const Footer = () => {
         </div>
 
         {/* Contact Information */}
-        <div className="text-center space-y-3">
+        <div className="text-center space-y-2">
           <h3 className="text-lg font-semibold text-white">Contact Us</h3>
           
           {/* Phone */}
-          <div className="flex items-center justify-center space-x-2">
-            <Phone size={18} className="text-accent" />
-            <div>
-              <a href="tel:+19194577325" className="font-bold text-white hover:text-accent transition-colors">(919) 457-7325</a>
-              <p className="text-xs text-accent">Available 7 days a week</p>
-            </div>
+          <div>
+            <a href="tel:+19194577325" className="font-bold text-white hover:text-accent transition-colors">(919) 457-7325</a>
           </div>
           
           {/* Email */}
-          <div className="flex items-center justify-center space-x-2">
-            <Mail size={18} className="text-accent" />
-            <div>
-              <a href="mailto:office@horizonpropertyservice.com" className="font-semibold text-white hover:text-accent transition-colors text-sm">office@horizonpropertyservice.com</a>
-              <p className="text-xs text-accent">2-hour response time</p>
-            </div>
+          <div>
+            <a href="mailto:office@horizonpropertyservice.com" className="font-semibold text-white hover:text-accent transition-colors text-sm">office@horizonpropertyservice.com</a>
           </div>
         </div>
       </div>
