@@ -65,10 +65,40 @@ const Contact = () => {
         throw error;
       }
 
-      toast({
-        title: "Request Submitted Successfully!",
-        description: "We've received your request and will contact you within 2 hours during business hours.",
-      });
+      // Call send-email edge function after successful Supabase insertion
+      try {
+        const emailResponse = await fetch('https://yylgysaoxzwgzwudphcc.supabase.co/functions/v1/send-email', {
+          method: 'POST',
+          headers: {
+            'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inl5bGd5c2FveHp3Z3p3dWRwaGNjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTUyNjgwMTIsImV4cCI6MjA3MDg0NDAxMn0.5d5cdr3e7Biheoc4dRvvP71c_G9BFt-pT2OHwpdCUbM',
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            first_name: data.firstName,
+            last_name: data.lastName,
+            phone: data.phone,
+            email: data.email,
+            service_address: data.serviceAddress,
+            service_type: data.serviceType,
+            project_description: data.projectDescription
+          })
+        });
+
+        if (emailResponse.ok) {
+          toast({
+            title: "Request Submitted Successfully!",
+            description: "We've received your request and sent you a confirmation email. We'll contact you within 2 hours during business hours.",
+          });
+        } else {
+          throw new Error('Email sending failed');
+        }
+      } catch (emailError) {
+        console.error('Email sending error:', emailError);
+        toast({
+          title: "Request Received!",
+          description: "Your request was received, but email confirmation failed. We'll follow up soon.",
+        });
+      }
       
       reset();
     } catch (error) {
