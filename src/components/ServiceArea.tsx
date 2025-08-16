@@ -4,23 +4,18 @@ import { CheckCircle, Award, Shield, Users } from "lucide-react";
 
 const ServiceArea = () => {
   const northCarolinaCities = [
-    "Elizabeth City", "Camden", "Hertford", "Winfall", "Weeksville", 
-    "Nixonton", "Shiloh", "Belcross", "Corapeake", "Edenton",
-    "Manteo", "Nags Head", "Kill Devil Hills", "Kitty Hawk"
+    "Corolla", "Nags Head", "Kill Devil Hills", "Kitty Hawk", "Manteo",
+    "Moyock", "Elizabeth City", "Grandy", "Currituck", "Powells Point"
   ];
 
   const virginiaAreas = [
-    "Norfolk", "Virginia Beach", "Chesapeake", "Portsmouth", "Suffolk",
-    "Hampton", "Newport News", "Williamsburg", "Poquoson", "Yorktown"
+    "Virginia Beach", "Chesapeake", "Norfolk", "Yorktown", "Poquoson",
+    "Suffolk", "Newport News", "Hampton", "Williamsburg"
   ];
 
-  const ncZipCodes = [
-    "27909", "27906", "27921", "27944", "27953", "27972", "27976", "27981", "27932", "27949"
-  ];
+  const ncZipCodes = "27927 · 27959 · 27948 · 27949 · 27954 · 27958 · 27909 · 27906 · 27939 · 27929 · 27966";
 
-  const vaZipCodes = [
-    "23320", "23321", "23322", "23451", "23452", "23453", "23454", "23455", "23456", "23464"
-  ];
+  const vaZipCodes = "23451 · 23452 · 23453 · 23454 · 23455 · 23456 · 23464 · 23320 · 23321 · 23322 · 23502 · 23503 · 23504 · 23505 · 23508 · 23518";
 
   return (
     <section className="py-20 bg-white section-separator">
@@ -56,11 +51,7 @@ const ServiceArea = () => {
               </div>
               <div className="mt-4 pt-4 border-t border-gray-200">
                 <p className="text-sm font-semibold text-gray-700 mb-2">ZIP Codes:</p>
-                <div className="grid grid-cols-3 gap-1">
-                  {ncZipCodes.map((zip, index) => (
-                    <span key={index} className="text-xs text-gray-600">{zip}</span>
-                  ))}
-                </div>
+                <p className="text-xs text-gray-600">{ncZipCodes}</p>
               </div>
             </CardContent>
           </Card>
@@ -84,11 +75,7 @@ const ServiceArea = () => {
               </div>
               <div className="mt-4 pt-4 border-t border-gray-200">
                 <p className="text-sm font-semibold text-gray-700 mb-2">ZIP Codes:</p>
-                <div className="grid grid-cols-3 gap-1">
-                  {vaZipCodes.map((zip, index) => (
-                    <span key={index} className="text-xs text-gray-600">{zip}</span>
-                  ))}
-                </div>
+                <p className="text-xs text-gray-600">{vaZipCodes}</p>
               </div>
               <p className="text-xs text-muted-foreground mt-4">
                 Don't see your area? Call us - we cover additional locations!
