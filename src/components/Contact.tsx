@@ -65,22 +65,6 @@ const Contact = () => {
         throw error;
       }
 
-      // Create mailto link
-      const subject = `New Service Request from ${data.firstName} ${data.lastName}`;
-      const body = `
-Name: ${data.firstName} ${data.lastName}
-Phone: ${data.phone}
-Email: ${data.email}
-${data.serviceAddress ? `Service Address: ${data.serviceAddress}` : ''}
-${data.serviceType ? `Service Type: ${data.serviceType}` : ''}
-
-Project Description:
-${data.projectDescription}
-      `.trim();
-      
-      const mailtoLink = `mailto:office@horizonpropertyservice.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-      window.location.href = mailtoLink;
-
       toast({
         title: "Request Submitted Successfully!",
         description: "We've received your request and will contact you within 2 hours during business hours.",
