@@ -78,7 +78,7 @@ Project Description:
 ${data.projectDescription}
       `.trim();
       
-      const mailtoLink = `mailto:office@horizonpropertyservices.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      const mailtoLink = `mailto:office@horizonpropertyservice.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
       window.location.href = mailtoLink;
 
       toast({
@@ -277,10 +277,10 @@ ${data.projectDescription}
                     <div>
                       <p className="font-semibold text-gray-900">Email Us</p>
                       <a 
-                        href="mailto:office@horizonpropertyservices.com"
+                        href="mailto:office@horizonpropertyservice.com"
                         className="text-primary hover:underline"
                       >
-                        office@horizonpropertyservices.com
+                        office@horizonpropertyservice.com
                       </a>
                       <p className="text-sm text-gray-600">We respond within 2 hours</p>
                     </div>

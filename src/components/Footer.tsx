@@ -70,7 +70,7 @@ const Footer = () => {
               <div className="flex items-start justify-center sm:justify-start space-x-3">
                 <Mail size={20} className="flex-shrink-0 mt-1" />
                 <div>
-                  <a href="mailto:office@horizonpropertyservices.com" className="hover:text-white transition-colors break-all">office@horizonpropertyservices.com</a>
+                  <a href="mailto:office@horizonpropertyservice.com" className="hover:text-white transition-colors break-all">office@horizonpropertyservice.com</a>
                   <p className="text-sm">2-hour response time</p>
                 </div>
               </div>
