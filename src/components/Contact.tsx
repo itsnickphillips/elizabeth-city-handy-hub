@@ -100,31 +100,31 @@ ${data.projectDescription}
   };
 
   return (
-    <section id="contact" className="py-20 bg-white">
-      <div className="container mx-auto px-4">
+    <section id="contact" className="py-12 sm:py-20 bg-white">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+        <div className="text-center mb-12 sm:mb-16">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">
             Get Your Free Quote Today
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto px-4">
             Ready to get started on your project? Contact us for a free, no-obligation estimate. 
             We're here to help bring your vision to life.
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 max-w-4xl mx-auto">
           {/* Contact Form */}
           <Card className="shadow-custom border-0">
-            <CardHeader>
-              <CardTitle className="text-2xl text-gray-900 flex items-center">
-                <MessageSquare className="mr-3 text-primary" />
+            <CardHeader className="p-4 sm:p-6">
+              <CardTitle className="text-xl sm:text-2xl text-gray-900 flex items-center">
+                <MessageSquare className="mr-2 sm:mr-3 text-primary" size={20} />
                 Request Your Free Estimate
               </CardTitle>
             </CardHeader>
-            <CardContent className="space-y-6">
-              <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
-                <div className="grid md:grid-cols-2 gap-4">
+            <CardContent className="p-4 sm:p-6 space-y-4 sm:space-y-6">
+              <form onSubmit={handleSubmit(onSubmit)} className="space-y-4 sm:space-y-6">
+                <div className="grid lg:grid-cols-2 gap-4">
                   <div>
                     <label className="block text-sm font-medium text-gray-700 mb-2">
                       First Name *
@@ -153,7 +153,7 @@ ${data.projectDescription}
                   </div>
                 </div>
                 
-                <div className="grid md:grid-cols-2 gap-4">
+                <div className="grid lg:grid-cols-2 gap-4">
                   <div>
                     <label className="block text-sm font-medium text-gray-700 mb-2">
                       Phone Number *
@@ -248,8 +248,8 @@ ${data.projectDescription}
           <div className="space-y-8">
             {/* Quick Contact */}
             <Card className="shadow-md border-0">
-              <CardContent className="p-8">
-                <h3 className="text-2xl font-bold text-gray-900 mb-6">
+              <CardContent className="p-4 sm:p-6 lg:p-8">
+                <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4 sm:mb-6">
                   Ready to Schedule Service?
                 </h3>
                 
