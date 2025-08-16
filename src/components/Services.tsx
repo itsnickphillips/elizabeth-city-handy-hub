@@ -91,9 +91,11 @@ const Services = () => {
                       </li>
                     ))}
                   </ul>
-                  <Button variant="outline">
-                    Learn More
-                    <ArrowRight className="ml-2" size={16} />
+                  <Button variant="outline" className="min-h-[44px]" asChild>
+                    <a href="#contact">
+                      Learn More
+                      <ArrowRight className="ml-2" size={16} />
+                    </a>
                   </Button>
                 </CardContent>
               </Card>
@@ -112,11 +114,11 @@ const Services = () => {
               and get a free, no-obligation estimate.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="primary" size="lg">
-                Get Free Estimate
+              <Button variant="primary" size="lg" className="min-h-[48px]" asChild>
+                <a href="#contact">Get Free Estimate</a>
               </Button>
-              <Button variant="outline" size="lg">
-                Call (919) 457-7325
+              <Button variant="outline" size="lg" className="min-h-[48px]" asChild>
+                <a href="tel:+19194577325">Call (919) 457-7325</a>
               </Button>
             </div>
           </div>

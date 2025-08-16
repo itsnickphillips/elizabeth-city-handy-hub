@@ -37,10 +37,10 @@ const Hero = () => {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <Button variant="primary" size="lg" className="text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 w-full sm:w-auto">
-                Get Free Estimate
+              <Button variant="primary" size="lg" className="text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 w-full sm:w-auto min-h-[48px]" asChild>
+                <a href="#contact">Get Free Estimate</a>
               </Button>
-              <Button variant="outline" size="lg" className="text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 w-full sm:w-auto lg:hidden" asChild>
+              <Button variant="outline" size="lg" className="text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 w-full sm:w-auto lg:hidden min-h-[48px]" asChild>
                 <a href="tel:+19194577325">
                   <Phone className="mr-2" size={18} />
                   Call Now
@@ -62,9 +62,11 @@ const Hero = () => {
               </div>
 
               <div className="mb-6">
-                <Button variant="primary" size="lg" className="w-full">
-                  <Phone className="mr-2" size={20} />
-                  Call (919) 457-7325
+                <Button variant="primary" size="lg" className="w-full" asChild>
+                  <a href="tel:+19194577325">
+                    <Phone className="mr-2" size={20} />
+                    Call (919) 457-7325
+                  </a>
                 </Button>
               </div>
 

@@ -14,75 +14,87 @@ const Footer = () => {
   return (
     <footer className="bg-primary text-primary-foreground">
       {/* Main Footer */}
-      <div className="container mx-auto px-4 py-12 lg:py-16">
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          {/* Company Info */}
-          <div className="sm:col-span-2 lg:col-span-1">
-            <div className="text-xl lg:text-2xl font-bold mb-4">
-              Horizon<span className="text-accent"> Property Services</span>
-            </div>
-            <p className="text-accent mb-6 text-sm lg:text-base leading-relaxed">
-              Your trusted regional property service provider across Northeastern NC & Hampton Roads. 
-              Professional repairs, installations, and maintenance for your home.
-            </p>
+      <div className="container mx-auto px-4 py-8 sm:py-12 lg:py-16">
+        {/* Logo Section - Mobile First */}
+        <div className="text-center mb-8 lg:mb-12">
+          <div className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4">
+            <span className="text-white">HPS</span>
           </div>
+          <div className="text-lg sm:text-xl lg:text-2xl font-bold mb-4">
+            Horizon<span className="text-accent"> Property Services</span>
+          </div>
+          <p className="text-accent text-sm sm:text-base lg:text-lg leading-relaxed max-w-2xl mx-auto">
+            Your trusted regional property service provider across Northeastern NC & Hampton Roads. 
+            Professional repairs, installations, and maintenance for your home.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
 
           {/* Services */}
-          <div>
-            <h3 className="text-base lg:text-lg font-semibold mb-4 lg:mb-6">Our Services</h3>
-            <ul className="space-y-2 lg:space-y-3 text-accent text-sm lg:text-base">
-              <li><a href="#services" className="hover:text-white transition-colors">General Repairs</a></li>
-              <li><a href="#services" className="hover:text-white transition-colors">Painting Services</a></li>
-              <li><a href="#services" className="hover:text-white transition-colors">Light Fixture & Fan Installation</a></li>
-              <li><a href="#services" className="hover:text-white transition-colors">Plumbing Fixture Replacement</a></li>
-              <li><a href="#services" className="hover:text-white transition-colors">Home Maintenance</a></li>
-              <li><a href="#services" className="hover:text-white transition-colors">Installation Services</a></li>
+          <div className="text-center sm:text-left">
+            <h3 className="text-lg lg:text-xl font-semibold mb-4 lg:mb-6 text-white">Our Services</h3>
+            <ul className="space-y-3 lg:space-y-4 text-accent text-sm sm:text-base">
+              <li><a href="#services" className="hover:text-white transition-colors block py-1">General Repairs</a></li>
+              <li><a href="#services" className="hover:text-white transition-colors block py-1">Painting Services</a></li>
+              <li><a href="#services" className="hover:text-white transition-colors block py-1">Light Fixture & Fan Installation</a></li>
+              <li><a href="#services" className="hover:text-white transition-colors block py-1">Plumbing Fixture Replacement</a></li>
+              <li><a href="#services" className="hover:text-white transition-colors block py-1">Home Maintenance</a></li>
+              <li><a href="#services" className="hover:text-white transition-colors block py-1">Installation Services</a></li>
             </ul>
           </div>
 
           {/* Quick Links */}
-          <div>
-            <h3 className="text-base lg:text-lg font-semibold mb-4 lg:mb-6">Quick Links</h3>
-            <ul className="space-y-2 lg:space-y-3 text-accent text-sm lg:text-base">
-              <li><a href="#services" className="hover:text-white transition-colors">Services</a></li>
-              <li><a href="#about" className="hover:text-white transition-colors">About Us</a></li>
-              <li><a href="#contact" className="hover:text-white transition-colors">Contact</a></li>
-              <li><a href="#contact" className="hover:text-white transition-colors">Free Estimate</a></li>
+          <div className="text-center sm:text-left">
+            <h3 className="text-lg lg:text-xl font-semibold mb-4 lg:mb-6 text-white">Quick Links</h3>
+            <ul className="space-y-3 lg:space-y-4 text-accent text-sm sm:text-base">
+              <li><a href="#services" className="hover:text-white transition-colors block py-1">Services</a></li>
+              <li><a href="#contact" className="hover:text-white transition-colors block py-1">About Us</a></li>
+              <li><a href="#contact" className="hover:text-white transition-colors block py-1">Contact</a></li>
+              <li><a href="#contact" className="hover:text-white transition-colors block py-1">Free Estimate</a></li>
             </ul>
           </div>
 
           {/* Contact Info */}
-          <div>
-            <h3 className="text-base lg:text-lg font-semibold mb-4 lg:mb-6">Contact Information</h3>
-            <div className="space-y-3 lg:space-y-4 text-accent text-sm lg:text-base">
-              <div className="flex items-start space-x-3">
-                <Phone size={18} className="flex-shrink-0 mt-0.5" />
+          <div className="text-center sm:text-left lg:col-span-1">
+            <h3 className="text-lg lg:text-xl font-semibold mb-4 lg:mb-6 text-white">Contact Information</h3>
+            <div className="space-y-4 lg:space-y-6 text-accent text-sm sm:text-base">
+              <div className="flex items-start justify-center sm:justify-start space-x-3">
+                <Phone size={20} className="flex-shrink-0 mt-1" />
                 <div>
-                  <a href="tel:+19194577325" className="font-semibold text-white hover:underline break-all">(919) 457-7325</a>
-                  <p className="text-xs lg:text-sm">Available 7 days a week</p>
+                  <a href="tel:+19194577325" className="font-semibold text-white hover:underline text-lg sm:text-xl">(919) 457-7325</a>
+                  <p className="text-sm">Available 7 days a week</p>
                 </div>
               </div>
               
-              <div className="flex items-start space-x-3">
-                <Mail size={18} className="flex-shrink-0 mt-0.5" />
+              <div className="flex items-start justify-center sm:justify-start space-x-3">
+                <Mail size={20} className="flex-shrink-0 mt-1" />
                 <div>
-                  <a href="mailto:office@horizonpropertyservices.com" className="hover:text-white transition-colors break-all text-sm">office@horizonpropertyservices.com</a>
-                  <p className="text-xs lg:text-sm">2-hour response time</p>
+                  <a href="mailto:office@horizonpropertyservices.com" className="hover:text-white transition-colors break-all">office@horizonpropertyservices.com</a>
+                  <p className="text-sm">2-hour response time</p>
                 </div>
               </div>
               
-              <div className="flex items-start space-x-3">
-                <MapPin size={18} className="flex-shrink-0 mt-0.5" />
+              <div className="flex items-start justify-center sm:justify-start space-x-3">
+                <MapPin size={20} className="flex-shrink-0 mt-1" />
                 <div>
-                  <p className="text-sm">Serving Elizabeth City, NC</p>
-                  <p className="text-xs lg:text-sm">& surrounding areas</p>
+                  <p>Serving Elizabeth City, NC</p>
+                  <p className="text-sm">& surrounding areas</p>
                 </div>
               </div>
             </div>
 
-            <Button variant="primary" className="w-full mt-4 lg:mt-6 text-sm lg:text-base py-2 lg:py-3" asChild>
-              <a href="#contact">Get Free Quote</a>
-            </Button>
+            <div className="flex flex-col sm:flex-row gap-3 mt-6 lg:mt-8">
+              <Button variant="outline" className="flex-1 min-h-[48px] text-sm sm:text-base" asChild>
+                <a href="#contact">Get Free Quote</a>
+              </Button>
+              <Button variant="outline" className="flex-1 min-h-[48px] text-sm sm:text-base" asChild>
+                <a href="tel:+19194577325">
+                  <Phone className="mr-2" size={18} />
+                  Call Now
+                </a>
+              </Button>
+            </div>
           </div>
         </div>
       </div>
