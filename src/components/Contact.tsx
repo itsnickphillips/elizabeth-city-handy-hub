@@ -67,7 +67,7 @@ const Contact = () => {
 
       // Call send-email edge function after successful Supabase insertion
       try {
-        const emailResponse = await fetch('https://yylgysaoxzwgzwudphcc.supabase.co/functions/v1/send-email', {
+        const emailResponse = await fetch('https://yylgysaoxzwgzwudphcc.functions.supabase.co/send-email', {
           method: 'POST',
           headers: {
             'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inl5bGd5c2FveHp3Z3p3dWRwaGNjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTUyNjgwMTIsImV4cCI6MjA3MDg0NDAxMn0.5d5cdr3e7Biheoc4dRvvP71c_G9BFt-pT2OHwpdCUbM',
