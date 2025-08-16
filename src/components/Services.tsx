@@ -19,10 +19,16 @@ const services = [
     features: ["Drywall patching & repair", "Door & window adjustments", "Caulking & weatherstripping", "Light carpentry & trim work"]
   },
   {
-    icon: Paintbrush,
-    title: "Painting Services",
-    description: "Give your home a fresh look inside or out with quality paintwork done right the first time.",
-    features: ["Interior room painting", "Exterior touch-ups", "Cabinet & furniture refinishing", "Staining & sealing"]
+    icon: Wrench,
+    title: "Installation Services",
+    description: "Get your new items set up the right way with secure, professional installation you can trust.",
+    features: ["Appliance unboxing & placement", "Shelving & storage installation", "TV mounting", "Smart home device setup"]
+  },
+  {
+    icon: Settings,
+    title: "Home Maintenance",
+    description: "Prevent costly repairs with seasonal upkeep and home care that keeps everything running smoothly.",
+    features: ["Gutter cleaning", "Pressure washing", "Screen & storm door adjustments", "Seasonal prep tasks"]
   },
   {
     icon: Zap,
@@ -37,16 +43,10 @@ const services = [
     features: ["Faucet & showerhead swaps", "Toilet flapper & handle repairs", "Minor leak fixes", "Drain cover replacements"]
   },
   {
-    icon: Settings,
-    title: "Home Maintenance",
-    description: "Prevent costly repairs with seasonal upkeep and home care that keeps everything running smoothly.",
-    features: ["Gutter cleaning", "Pressure washing", "Screen & storm door adjustments", "Seasonal prep tasks"]
-  },
-  {
-    icon: Wrench,
-    title: "Installation Services",
-    description: "Get your new items set up the right way with secure, professional installation you can trust.",
-    features: ["Appliance unboxing & placement", "Shelving & storage installation", "TV mounting", "Smart home device setup"]
+    icon: Paintbrush,
+    title: "Painting Services",
+    description: "Give your home a fresh look inside or out with quality paintwork done right the first time.",
+    features: ["Interior room painting", "Exterior touch-ups", "Cabinet & furniture refinishing", "Staining & sealing"]
   }
 ];
 
